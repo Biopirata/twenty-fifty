@@ -122,12 +122,19 @@ Get the code:
 
     git clone http://github.com/decc/twenty-fifty
 
+If the model has changed, the C code needs to be recompiled. To trigger it manually:
+ 
+1.       cd model
+2.       bundle exec ruby compile_c_version_of_excel.rb
+
+
 Install its dependencies
 
     cd twenty-fifty
     bundle 
 
 If any dependencies fail, you may need to install them individually, then run bundle again.
+
 
 At this point, you _should_ be able to run
 
