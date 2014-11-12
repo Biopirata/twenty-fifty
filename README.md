@@ -124,8 +124,8 @@ Get the code:
 
 If the model has changed, the C code needs to be recompiled. To trigger it manually:
  
-1.       cd model
-2.       bundle exec ruby compile_c_version_of_excel.rb
+    cd model
+    bundle exec ruby compile_c_version_of_excel.rb
 
 
 Install its dependencies
