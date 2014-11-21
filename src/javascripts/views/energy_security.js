@@ -83,8 +83,8 @@ twentyfifty.views.energy_security = function() {
     // [{A: "Hello", B: 1}, { A: "World", B: 2}]
     data = arrangeData(pathway.diversity);
 
-    // This creates a total of the % contribution of each fuel in 2007 and 2050
-    data.forEach(function(d) { d.total =  (+d['2007']+d['2050']) });
+    // This creates a total of the % contribution of each fuel in 2010 and 2050
+    data.forEach(function(d) { d.total =  (+d['2010']+d['2050']) });
     // This removes fuels that aren't used
     data = data.filter(function(d) { return d.total > 0.01 });
     // This sorts the table so that the most important fuels are at the top
@@ -103,11 +103,11 @@ twentyfifty.views.energy_security = function() {
     // This makes sure that the html order is the same as the data order
     rows.order();
 
-    // We only care about the name, and the values in 2007 and 2050
+    // We only care about the name, and the values in 2010 and 2050
     cells = rows.selectAll("td").data(function(d) { 
       return [
         d["Vector"], 
-        format_percent(d['2007']),
+        format_percent(d['2010']),
         "",
         format_percent(d['2050'])
       ]; 
@@ -124,20 +124,20 @@ twentyfifty.views.energy_security = function() {
     quantity = arrangeData(pathway.imports.quantity);
     proportion = arrangeData(pathway.imports.proportion);
 
-    // We combine those two tables, picking out only 2007 and 2050 data
+    // We combine those two tables, picking out only 2010 and 2050 data
     data = quantity.map(function(d,i) {
       p = proportion[i];
       if(p.Vector != d.Vector) {
         console.log("Error, the imports quanitity and imports proportion table must be sorted identically", p, d, i);
         return {};
       }
-      total = +d['2007'] + d['2050'];
+      total = +d['2010'] + d['2050'];
       return { 
          'name': d.Vector, 
          'total': total, 
-         'quantity_2007': +d['2007'],
+         'quantity_2010': +d['2010'],
          'quantity_2050': +d['2050'],
-         'proportion_2007': +p['2007'],
+         'proportion_2010': +p['2010'],
          'proportion_2050': +p['2050']
       };
     });
@@ -162,12 +162,12 @@ twentyfifty.views.energy_security = function() {
     // This makes sure that the html order is the same as the data order
     rows.order();
 
-    // We only care about the name, and the values in 2007 and 2050
+    // We only care about the name, and the values in 2010 and 2050
     cells = rows.selectAll("td").data(function(d) { 
       return [
         d.name, 
-        format_round(d.quantity_2007),
-        format_percent(d.proportion_2007),
+        format_round(d.quantity_2010),
+        format_percent(d.proportion_2010),
         "&nbsp;",
         format_round(d.quantity_2050),
         format_percent(d.proportion_2050)

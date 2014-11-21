@@ -14,18 +14,18 @@ window.twentyfifty.views.primary_energy_chart = function() {
       .attr('class', 'chart');
 
     this.final_energy_chart = timeSeriesStackedAreaChart()
-      .title("Final Energy Demand")
-      .unit('TWh/yr')
-      .max_value(4000);
+      .title("Demanda Final de Energía")
+      .unit('PJ/año')
+      .max_value(12000);
 
     this.primary_energy_chart = timeSeriesStackedAreaChart()
-      .title("Primary Energy Supply")
-      .unit('TWh/yr')
-      .max_value(4000);
+      .title("Oferta de Energía Primaria")
+      .unit('PJ/año')
+      .max_value(12000);
 
     this.emissions_chart = timeSeriesStackedAreaChart()
-      .title("Greenhouse Gas Emissions")
-      .unit('MtCO2e/yr')
+      .title("Emisiones de Gases de Efecto Invernadero")
+      .unit('MtCO2e/año')
       .min_value(-500)
       .max_value(1000);
   };
@@ -61,7 +61,7 @@ window.twentyfifty.views.primary_energy_chart = function() {
   this.updateResults = function(pathway) {
 
     // Add some footnote references
-    if(pathway.primary_energy_supply[pathway.primary_energy_supply.length-1][0] == "Total used in UK") {
+    if(pathway.primary_energy_supply[pathway.primary_energy_supply.length-1][0] == "Total usado en México") {
       pathway.primary_energy_supply[pathway.primary_energy_supply.length-1][0] =  pathway.primary_energy_supply[pathway.primary_energy_supply.length-1][0] + "¹";
     }
 
@@ -102,7 +102,7 @@ window.twentyfifty.views.primary_energy_chart = function() {
       current = parseInt(this.textContent) || +d;
       i = d3.interpolateRound(current, +d);
       return function(t) {
-        return this.textContent = "" + (i(t)) + "% reduction 1990-2050; Target is 80%";
+        return this.textContent = "" + (i(t)) + "% reducción (aumento) entre 2000-2050; la meta es 50%";
       };
     });
 
@@ -128,7 +128,7 @@ window.twentyfifty.views.primary_energy_chart = function() {
       .attr('class', 'targetlabel');
 
     new_label.append('text')
-      .text("Targets²");
+      .text("Meta²");
 
     t.select('text')
       .attr('x', function(d,i) { return x(2022) })
@@ -137,8 +137,8 @@ window.twentyfifty.views.primary_energy_chart = function() {
     new_label.append('line');
 
     t.select('line')
-      .attr('x1', function(d,i) { return x(2015)+4 })
-      .attr('y1', function(d,i) { return y(d)-4 })
+      .attr('x1', function(d,i) { return x(2020)+4 })
+      .attr('y1', function(d,i) { return y(640)-4 })
       .attr('x2', function(d,i) { return x(2022) })
       .attr('y2', function(d,i) { return y(800) });
 
