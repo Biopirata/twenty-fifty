@@ -60,12 +60,12 @@ window.twentyfifty.views.map = function() {
   displayin_element = 'map';
   display_width = 1200;
   display_height = 800;
-  mapimage_url = '/assets/images/uk.png';
-  map_width = 492;
-  map_height = 725;
-  map_offset_x = 150;
-  map_offset_y = 0;
-  km = 0.69;
+  mapimage_url = '/assets/images/mexico.png';
+  map_width = 759;
+  map_height = 586;
+  map_offset_x = 20;
+  map_offset_y = 20;
+  km = 0.25;
   m = km / 1000.0;
   m2 = m * m;
   ha = 10000 * m2;
@@ -97,25 +97,25 @@ window.twentyfifty.views.map = function() {
   };
 
   labels = {
-    'III.a.2': 'Offshore wind',
-    'III.a.1': 'Onshore wind',
-    'IV.c': 'Micro wind',
-    'VI.a.Biocrop': 'Energy crops',
-    'VI.a.Forestry': 'Forest',
-    'VI.c': 'Marine algae',
-    'V.b': 'Biocrops',
-    'IV.a': 'Solar PV',
-    'IV.b': 'Solar thermal',
-    'VII.a': 'Solar PV',
-    'III.b': 'Hydro',
+    'III.a.2': 'Eólica de costa',
+    'III.a.1': 'Eólica en tierra',
+    'IV.c': 'Micro eólica',
+    'VI.a.Biocrop': 'Bioenergéticos',
+    'VI.a.Forestry': 'Bosques',
+    'VI.c': 'Algas marinas',
+    'V.b': 'Bioenergéticos',
+    'IV.a': 'Solar fotovoltáica (distribuida)',
+    'IV.b': 'Solar térmica',
+    'VII.a': 'Solar fotovoltáica',
+    'III.b': 'Hidroeléctricas',
     'III.c.TidalRange': 'Tidal range',
     'III.c.TidalStream': 'Tidal stream',
-    'I.a': '2 GW coal gas or biomass power stations without CCS',
-    'I.b': '1.2 GW coal gas or biomass power stations with CCS',
-    'II.a': '3 GW nuclear power station',
-    'III.d': '0.01 GW geothermal stations',
-    'VII.c': '1 GW gas standby power stations',
-    'VI.b': '215 kt/y waste to energy conversion facilities'
+    'I.a': 'plantas de 2 GW a carbón/biomasa sin CCS',
+    'I.b': 'plantas de 1.2 GW carbón/gas/biomasa con CCS',
+    'II.a': 'plantas nucleares de 3 GW',
+    'III.d': 'plantas geotérmicas de 0.01 GW',
+    'VII.c': 'plantas de respaldo a gas de 1 GW',
+    'VI.b': 'plantas de generación con residuos de 215 kt/y'
   };
 
   pointSizes = {
@@ -136,7 +136,7 @@ window.twentyfifty.views.map = function() {
     r.image(mapimage_url, map_offset_x, map_offset_y, map_width, map_height);
 
     // Title
-    r.text(20, 10, "Illustration of scale of land and sea use in 2050 (positions are arbitrary)").attr({
+    r.text(20, 10, "Ilustración de la escala de territorio empleado en 2050 (ubicaciones arbitrarias)").attr({
       'font-weight': 'bold',
       'text-anchor': 'start'
     });
@@ -144,7 +144,7 @@ window.twentyfifty.views.map = function() {
     // The wave line
     this.wave = {
       line: r.path([]).attr({ stroke: 'blue', 'stroke-width': 2 }),
-      label: r.text(98, 34, "Wave").attr({ 'text-anchor': 'end' })
+      label: r.text(98, 34, "Oleaje").attr({ 'text-anchor': 'end' })
     };
     this.wave.label.hide();
 
@@ -152,7 +152,7 @@ window.twentyfifty.views.map = function() {
     x = (map_width / 2) + map_offset_x;
     y = map_height + map_offset_y - 100;
     this.land_boxes = {};
-    land_box_names = ['III.a.1', 'III.b', 'IV.a', 'IV.b', 'IV.c', 'VI.a.Biocrop', 'VI.a.Forestry'];
+    land_box_names = ['III.b', 'IV.a', 'IV.b', 'IV.c', 'VI.a.Biocrop', 'VI.a.Forestry'];
     for (i = 0, len = land_box_names.length; i < len; i++) {
       name = land_box_names[i];
       this.land_boxes[name] = r.upiabeled_square(x, y, labels[name], 0, colours[name]);
@@ -162,15 +162,15 @@ window.twentyfifty.views.map = function() {
     x = (map_width / 2) + map_offset_x + 250;
     y = 30;
     this.sea_boxes = {};
-    sea_box_names = ['III.a.2', 'III.c.TidalStream', 'III.c.TidalRange', 'VI.c'];
+    sea_box_names = ['III.c.TidalStream','VI.c'];
     for (i = 0, len = sea_box_names.length; i < len; i++) {
       name = sea_box_names[i];
       this.sea_boxes[name] = r.downiabeled_square(x, y, labels[name], 0, colours[name]);
     }
 
     // Draw the half circle with label to indicate land area overseas
-    r.path("M244,695 q0,-200 -200,-200").attr({ 'stroke': '#ccc' });
-    r.text(44, 510, "Imports").attr({ 'fill': '#ccc', 'font-weight': 'bold', 'text-anchor': 'start' });
+    r.path("M224,600 q0,-200 -200,-200").attr({ 'stroke': '#ccc' });
+    r.text(24, 420, "Importaciones").attr({ 'fill': '#ccc', 'font-weight': 'bold', 'text-anchor': 'start' });
     
     // Now draw the land area overseas boxes, starting map bottom-left
     x = map_offset_x - 105;
@@ -184,7 +184,7 @@ window.twentyfifty.views.map = function() {
 
     // Now deal with the objects that aren't on the map. In this case a stack of circles
     this.points = r.set();
-    r.text(700, 10, "Illustration of the number of thermal power stations in 2050 (scales and positions are arbitrary)").attr({ 'font-weight': 'bold', 'text-anchor': 'start' });
+    r.text(700, 10, "Ilustración del número de plantas térmicas en 2050 (escala y posición arbirtrarios)").attr({ 'font-weight': 'bold', 'text-anchor': 'start' });
   }
 
   // This is a helper method for drawing the blocks of circles representating power stations of a particular type
