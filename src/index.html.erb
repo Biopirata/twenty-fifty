@@ -90,7 +90,7 @@
       <div id='demand'>
         <table>
           <!-- One row per choice -->
-          <% structure.choices[19..31].each do |choice| %>
+          <% structure.choices[17..30].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -115,7 +115,7 @@
       <!-- The middle column -->
       <div id='supply'>
         <table>
-          <% structure.choices[0..18].each do |choice| %>
+          <% structure.choices[0..16].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -141,7 +141,7 @@
       <div id='other'>
         <table>
           <!-- this should actually go up to choice 42, but that isn't ready for prime time yet -->
-          <% structure.choices[32..33].each do |choice| %>
+          <% structure.choices[31..32].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -201,48 +201,48 @@
         </div>
         <div id='air_quality_results'>
           <div class='airquality'>
-            <h1>The impact of your pathway on air quality</h1>
+            <h1>Impacto de tu escenario sobre la calidad del aire</h1>
             <div class='airqualitymessage' id='airqualitymessage'>
-              The damage to human health arising from air pollution from this pathway, principally particulate matter, could be around <span id='airquality_range_start'></span><span id='airquality_range_end'></span> in 2050 compared to 2010. <span id='air_quality_worse'> Given the scope for adverse implications for air quality, if the UK were to adopt this pathway the Government  would develop a policy framweork that supported the innovation required to be at the bottom end of the range</span>
+              El daño a la salud humana asociado a la contaminación atmosférica de este escenario, principalmente por partículas suspendidas, podría ser de alrededor de <span id='airquality_range_start'></span><span id='airquality_range_end'></span> en 2050, comparado con el 2010. <span id='air_quality_worse'> </span>
           </div>
             <div id='airquality'></div>
             <div class='airqualitymessage'>
-              <h2>How to interpret these results:</h2>
+              <h2>Cómo interpetar los resultados:</h2>
               <ul>
-                <li>Air pollution health impact index &mdash; this index measures the effect on human health from fine particulate matter and other air pollutants such as nitrogen oxides.  For example, these pollutants have been linked to premature death caused by heart and lung disease. 2010 is the baseline year (100). A number lower than 100 indicates a reduction in average air pollution and associated health impacts, whilst a higher number indicates an increase. This index reflects changes in the average concentration of air pollutants across the UK.  It does not provide information on the number or severity of pollution hotspots.</li>
-                <li>High end of hatched range &mdash; worst case scenario for air pollution whereby there is no further deployment or innovation in pollution abatement technology between now and 2050 beyond planned measures.</li>
-                <li>Low end of hatched range &mdash; best case scenario whereby innovation radically improves pollution abatement technology between now and 2050 and it is fully deployed.</li>
+                <li>El índice de impacto a la salud de la calidad del aire &mdash; este índice mide el efecto sobre la salud humana proveniente de las partículas suspendidas y otros contaminantes tales como los óxidos de nitrógeno.  Por ejemplo, estos contaminantes se han asociado a muertes prematuras causadas por daños al corazón y los pulmones. 2010 es el año base (100). Un número menor a 100 indica una reducción en la contaminación atmosférica y sus impactos asociados en salud, mientras que un valor más alto indica un aumento en los impactos. Este índice refleja la concentración promedio de contaminantes en México. No provee información sobre áreas de alta concentración de contaminantes. </li>
+                <li>Nivel alto del rango entramado &mdash; peor escenario de contaminación atmosférica donde no hay mayor introducción de medidas de control de la contaminación entre hoy y el 2050.</li>
+                <li>Nivel bajo del rango entramado &mdash; mejor escenario donde la innovación mejora radicalmente la tecnología de control de la contaminación y es instrumentada entre hoy y el 2050. </li>
               </ul>
               <p>
-              We would welcome your feedback on the
-              <a href="http://2050-calculator-tool-wiki.decc.gov.uk/pages/80">methodology</a> used to calculate the impact of your pathway on air quality.
-              You can also download the excel version of the 2050 pathways calcualtor to see the different types of air pollution and the relative importance of different sources.
+              Agradecemos su retroalimentación sobre la 
+              <a href="http://2050-calculator-tool-wiki.decc.gov.uk/pages/80">metodología</a> usada para calcular el impacto de su escenario sobre la calidad del aire.
+              También puede descargar la versión excel de la calculadora México 2050 para ver diferentes tipos de contaminación atmosférica y la importancia relativa de las diferentes fuentes. 
               </p>
             </div>
           </div>
         </div>
         <div id="energysecurity">
           <div id="balancing" class="column">
-            <h2>Balancing electricity supply and demand</h2>
-            <p id='autobuild_text'><span id='pathway_balancing_ccgt'></span> GW of conventional gas electricity generation plant has been assumed to have been built by 2050, to cover the gap between average electricity demand and the amount of low carbon generation selected in this pathway.</p>
-            <p>This tool does not model the hourly, daily or even seasonal operation of the electricity grid. It presents annual averages. Therefore it does not correctly represent the peaks and troughs of electricity demand.</p>
-            <p>To go some way to addressing this flaw, the tool applies a simulated stress test to your pathway of five cold, almost windless, days. This is described in more detail <a href="/assets/onepage/49.pdf" target="_new">here</a>. In this case, the stress test implies that <span id='pathway_balancing_peaking'></span> GW of additional peaking plant may be required for supply to meet demand over that period.</p>
-            <p>You can influence the amount of peaking plant by changing your choice level of 'storage, demand shifting &amp; interconnection' below right,or by reducing the amount of intermittent renewable generation, or by reducing the demand for electricity</p>
+            <h2>Balanceo de la demanda y oferta de electricidad</h2>
+            <p id='autobuild_text'> Se asume que se construyen <span id='pathway_balancing_ccgt'></span> GW de capacidad de generación a base de gas para cubrir la brecha entre la demanda promedio de energía y la cantidad de generación baja en carbono seleccionada en el escenario.</p>
+            <p>Esta heramienta no modela la operación horaria, diaria o incluso estacional de la red. Presenta sólo promedios anuales. Por tanto, no representa de manera correcta los picos y valles de demanda energética.</p>
+            <p>Para atender esta limitación, la herramienta aplica una prueba simulada de estrés considerando un pico de calor en un contexto de poco viento. Esto se describe con mayor detall en [en construcción] <a href="/assets/onepage/49.pdf" target="_new">here</a>. En este caso, la prueba de stress implica que podrían requerirse <span id='pathway_balancing_peaking'></span> GW de capacidad para cubrir los picos de demanda.</p>
+            <p>Puedes influenciar la capacidad requerida para demanda pico cambiando el nivel de "almacenamiento, desplazamiento de demanda e intercomección", reduciendo la cantidad de generación renovable intermitente, o reduciendo la demanda de electricidad</p>
           </div>
           <div id="imports" class="column">
-            <h2>Dependence on imported energy</h2>
-            <p>The calculator assumes that any available biomass is preferred over fossil fuels and that domestically produced fuels are preferred over imports.It assumes that fossil fuels are imported to cover any shortfall.</p>
+            <h2>Dependencia sobre energía importada</h2>
+            <p>La calculadora supone que cualquier biomasa disponible es preferida sobre los combustibles fósiles y que los combustibles producidos domésticamente son mejores que los importados. Supone que se importan combustibles fósiles para cubrir demanda no satisfecha.</p>
             <table id="imports">
-              <tr><th class="description"></th><th colspan="2" class="year">2007</th><th></th><th colspan="2" class="year">2050</th></tr>
+              <tr><th class="description"></th><th colspan="2" class="year">2010</th><th></th><th colspan="2" class="year">2050</th></tr>
               <tr><th class="description">Imports</th><th class="value">TWh/yr</th><th class="value">%</th><th></th><th class="value">TWh/yr</th><th class="value">%</th></tr>
             </table>
           </div>
           <div id="diversity" class="column">
-            <h2>Diversity of energy sources</h2>
-            <p>There may be a benefit from maintaining a diversity of energy sources:</p>
+            <h2>Diversidad de fuentes de energía</h2>
+            <p>Puede haber un beneficio de mantener una diversidad de fuentes de energía:</p>
             <table id="diversity">
               <tbody>
-              <tr><th class="description">Proportion of energy supply</th><th class="year">2007</th><th></th><th class="year">2050</th></tr>
+              <tr><th class="description">Proporción de la oferta energética</th><th class="year">2010</th><th></th><th class="year">2050</th></tr>
               </tbody>
             </table>
           </div>

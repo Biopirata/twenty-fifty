@@ -68,7 +68,7 @@ window.twentyfifty.views.air_quality = function() {
         .attr("y", -30)
         .attr("text-anchor", "start")
         .attr("class", "caption")
-        .text("Air pollution health impact index (2010=100)");
+        .text("Ìndice de impacto de la contaminación del aire sobre la salud (2010=100)");
       
       // We don't want a fully fledged y-axis, so just
       // draw one line instead
@@ -131,7 +131,7 @@ window.twentyfifty.views.air_quality = function() {
       data[1] = { 
         name: "comparator", 
         css: "comparator",
-        caption: "2050 - "+twentyfifty.pathwayName(pathway['_id'], "Comparison"),
+        caption: "2050 - "+twentyfifty.pathwayName(pathway['_id'], "Comparación"),
         low: pathway.air_quality[1][1], 
         high: pathway.air_quality[0][1]
       }
@@ -142,7 +142,7 @@ window.twentyfifty.views.air_quality = function() {
       data[1] = { 
         name: "chosen", 
         css: "chosen",
-        caption: "2050 - "+twentyfifty.pathwayName(pathway['_id'], "Your pathway"),
+        caption: "2050 - "+twentyfifty.pathwayName(pathway['_id'], "Tu escenario"),
         low: pathway.air_quality[1][1], 
         high: pathway.air_quality[0][1]
       }

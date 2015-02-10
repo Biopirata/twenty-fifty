@@ -2,7 +2,7 @@ window.twentyfifty.views.costs_in_context = function() {
   
   __hasProp = {}.hasOwnProperty;
 
-  costsInContextHTML = "<div class='costsincontext'>\n  <div id='cost_override_warning'>NB Some costs not on default values</div>\n  <h1>\n    The cost to society of your pathway. This is not your energy bill.<br>\n    For comparison, UK average GDP 2010-2050 is forecast to be roughly &pound;35000 per person.\n  </h1>\n  <div id='costsincontext'></div>\n  " + window.costEssentialNotesHTML + "\n</div>";
+  costsInContextHTML = "<div class='costsincontext'>\n  <div id='cost_override_warning'>NOTA: Algunos costos no están en valores por defecto</div>\n  <h1>\n    Costo de tu futuro elegido. No es tu gasto en energía. <br>\n    Para comparación, el PIB per cápita promedio entre 2010-2050 se estima en aproximadamente US&dollar;14,500 por año.\n  </h1>\n  <div id='costsincontext'></div>\n  " + window.costEssentialNotesHTML + "\n</div>";
 
   this.pathways = {};
 
@@ -34,12 +34,12 @@ window.twentyfifty.views.costs_in_context = function() {
       'stroke': 'none'
     });
 
-    this.r.text(30, this.y("chosen") + 9, "Your pathway").attr({
+    this.r.text(30, this.y("chosen") + 9, "Tu futuro").attr({
       'text-anchor': 'start',
       'font-weight': 'bold'
     });
 
-    this.r.text(30, this.y("chosen") + 27, "You can click on the chart to make a more\ndetailed comparison with the pathways below").attr({
+    this.r.text(30, this.y("chosen") + 27, "Puedes hacer click en la gráfica para hacer \nuna comparación más detallada con el futuro \nque aparece abajo").attr({
       'text-anchor': 'start'
     });
 
@@ -115,7 +115,7 @@ window.twentyfifty.views.costs_in_context = function() {
     'stroke': 'none'
     });
     overlays.insertAfter(this.incremental_overlay);
-    this.r.text(this.x(0), this.h - 5, "The absolute cost to society of the whole energy system (mean undiscounted real pounds per person per year 2010-2050)").attr({
+    this.r.text(this.x(0), this.h - 5, "El costo absoluto a la sociedad del sistema energético (pesos reales no descontados por persona por año 2010-2050)").attr({
       'text-anchor': 'start',
       'font-weight': 'bold',
       'fill': '#008000'
@@ -131,7 +131,7 @@ window.twentyfifty.views.costs_in_context = function() {
       tick = _ref[_l];
       this.r.text(this.x(tick), this.h - 20, format(tick)).attr({ 'text-anchor': 'middle', fill: '#008000' });
     }
-    this.drawIndicator(3700, "Approximate energy system cost today");
+    this.drawIndicator(3700, "Costo aproximado del sistema energético hoy");
     _results = [];
 
     that = this;
@@ -189,7 +189,7 @@ window.twentyfifty.views.costs_in_context = function() {
       });
     } else if (_id === (twentyfifty.getComparator() || twentyfifty.default_comparator_code)) {
       this.comparator = pathway;
-      this.r.text(this.x(total_cost), 10, "The extra cost to society above that of the '" + (twentyfifty.pathwayName(_id, "comparison")) + "' pathway (mean £/person/year 2010-2050)").attr({
+      this.r.text(this.x(total_cost), 10, "El costo extra para la sociedad más alla del futuro '" + (twentyfifty.pathwayName(_id, "comparison")) + "' (promedio Pesos/persona/año 2010-2050)").attr({
         'text-anchor': 'start',
         'font-weight': 'bold',
         'fill': '#f00'
@@ -253,10 +253,10 @@ window.twentyfifty.views.costs_in_context = function() {
     bar.overlay.attr({
       width: this.x(total_cost + total_range) - this.x(0)
     });
-    if (pathway.ghg_reduction_from_1990 < 0.8) {
+    if (pathway.ghg_reduction_from_1990 < 0.5) {
       bar.message.attr({
         x: this.x(total_cost + total_range) + 100,
-        text: "This pathway does not reduce emissions by at least 80% on 1990 levels"
+        text: "Este escenario no reduce emisiones en al menos 50% con respecto a niveles del 2000"
       });
       return bar.message.toFront();
     } else {
