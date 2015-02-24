@@ -74,7 +74,7 @@ window.twentyfifty.views.primary_energy_chart = function() {
     demand = convert_table_to_hash(pathway.final_energy_demand);
     supply = convert_table_to_hash(pathway.primary_energy_supply);
     ghg = convert_table_to_hash(pathway.ghg.slice(0,-1));
-    percent = pathway.ghg_reduction_from_1990;
+    percent = pathway.ghg_reduction_from_2000;
 
     // Draw the charts
     d3.select('#demand_chart')

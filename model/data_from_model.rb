@@ -40,7 +40,7 @@ class DataFromModel
       'choices' => choices,
       'sankey' => excel.output_flows, # output.flows in the Excel
       'ghg' => excel.output_ghg_by_ipcc_sector, # output.ghg.by.ipcc.sector in Excel
-      'ghg_reduction_from_1990' => excel.output_ghg_percentage_reduction, # output.ghg.percentage.reduction in Excel
+      'ghg_reduction_from_2000' => excel.output_ghg_percentage_reduction, # output.ghg.percentage.reduction in Excel
       'final_energy_demand' => excel.output_finalenergydemand, # output.finalenergydemand
       'primary_energy_supply' => excel.output_primaryenergysupply, # output.primaryenergysupply
       'electricity' => {
