@@ -6734,6 +6734,8 @@ class Model
     attach_function 'intermediate_output_bk278', [], ExcelValue.by_value
     attach_function 'intermediate_output_bl278', [], ExcelValue.by_value
     # end of Intermediate output
+    # end of Indicators
+    # end of INEGEI
     attach_function 'energy_d17', [], ExcelValue.by_value
     attach_function 'energy_e17', [], ExcelValue.by_value
     attach_function 'energy_f17', [], ExcelValue.by_value
@@ -9729,13 +9731,12 @@ class Model
     # end of IV.a
     # end of IV.b
     # end of IV.c
+    # end of VI.d
     # end of V.a
     # end of V.b
     # end of VI.a
     # end of VI.b
     # end of VI.c
-    # end of VI.d
-    # end of INEGEI
     # end of VII.a
     # end of VII.b
     # end of VII.c
