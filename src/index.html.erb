@@ -88,9 +88,13 @@
     <div id='classic_controls'>
       <!-- The left column -->
       <div id='demand'>
+        
+
+
         <table>
           <!-- One row per choice -->
-          <% structure.choices[11..29].each do |choice| %>
+         <p><b>Desarrollo urbano y transporte</b></p> 
+          <% structure.choices[11..17].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -98,7 +102,7 @@
                 </a>
               </td>
               <td class='help'>
-                <a title='Click for more detail on what choices <%= choice.levels.to_a.join(' ')%> mean.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+                <a title='Haga "click" para información sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
               </td>
               <!-- One cell per level for that choice -->
               <% choice.levels.each.with_index do |level,i| %>
@@ -111,19 +115,102 @@
             </tr>
           <% end %>
         </table>
+   
+		<table>
+          <!-- One row per choice -->
+          <p><b>Vivienda</b></p> 
+          <% structure.choices[18..24].each do |choice| %>
+            <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
+              <td class='name'>
+                <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
+                  <%= choice.name %>
+                </a>
+              </td>
+              <td class='help'>
+                <a title='Haga "click" para información sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+              </td>
+              <!-- One cell per level for that choice -->
+              <% choice.levels.each.with_index do |level,i| %>
+                <td class='choice'>
+                  <a href='#' data-choicenumber='<%= choice.number %>' data-choicelevel='<%= i+1 %>' id='c<%= choice.number %>l<%= i+1%>' title='<%= choice.descriptions[i] %>' class='choiceLink' >
+                    <%= level %>
+                </a>
+              </td>
+            <% end %>
+            </tr>
+          <% end %>
+        </table>
+
+
+        <table>
+          <!-- One row per choice -->
+		  <p><b>Industria</b></p> 
+          <% structure.choices[25..26].each do |choice| %>
+            <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
+              <td class='name'>
+                <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
+                  <%= choice.name %>
+                </a>
+              </td>
+              <td class='help'>
+                <a title='Haga "click" para información sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+              </td>
+              <!-- One cell per level for that choice -->
+              <% choice.levels.each.with_index do |level,i| %>
+                <td class='choice'>
+                  <a href='#' data-choicenumber='<%= choice.number %>' data-choicelevel='<%= i+1 %>' id='c<%= choice.number %>l<%= i+1%>' title='<%= choice.descriptions[i] %>' class='choiceLink' >
+                    <%= level %>
+                </a>
+              </td>
+            <% end %>
+            </tr>
+          <% end %>
+        </table>
+
+
+		<table>
+          <!-- One row per choice -->
+		  <p><b>Comercio, servicios y sector público</b></p> 
+          <% structure.choices[27..28].each do |choice| %>
+            <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
+              <td class='name'>
+                <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
+                  <%= choice.name %>
+                </a>
+              </td>
+              <td class='help'>
+                <a title='Haga "click" para información sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+              </td>
+              <!-- One cell per level for that choice -->
+              <% choice.levels.each.with_index do |level,i| %>
+                <td class='choice'>
+                  <a href='#' data-choicenumber='<%= choice.number %>' data-choicelevel='<%= i+1 %>' id='c<%= choice.number %>l<%= i+1%>' title='<%= choice.descriptions[i] %>' class='choiceLink' >
+                    <%= level %>
+                </a>
+              </td>
+            <% end %>
+            </tr>
+          <% end %>
+        </table>
+
+
       </div>
+
+
       <!-- The middle column -->
       <div id='supply'>
+
         <table>
-          <% structure.choices[0..10].each do |choice| %>
+		  <p><b>Nuclear</b></p>         
+          <% structure.choices[0..0].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
                   <%= choice.name %>
                 </a>
               </td>
-              <td class='help'>
-                <a title='Click for more detail on what choices <%= choice.levels.to_a.join(' ')%> mean.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+             <td class='help'>
+                <a title='Haga "click" para información sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
               </td>
               <!-- One cell per level for that choice -->
               <% choice.levels.each.with_index do |level,i| %>
@@ -136,20 +223,95 @@
             </tr>
           <% end %>
         </table>
+
+
+        <table>
+     	  <p><b>Generación fósil</b></p>  
+          <% structure.choices[1..3].each do |choice| %>
+            <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
+              <td class='name'>
+                <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
+                  <%= choice.name %>
+                </a>
+              </td>
+             <td class='help'>
+                <a title='Haga "click" para información sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+              </td>
+              <!-- One cell per level for that choice -->
+              <% choice.levels.each.with_index do |level,i| %>
+                <td class='choice'>
+                  <a href='#' data-choicenumber='<%= choice.number %>' data-choicelevel='<%= i+1 %>' id='c<%= choice.number %>l<%= i+1%>' title='<%= choice.descriptions[i] %>' class='choiceLink' >
+                    <%= level %>
+                </a>
+              </td>
+            <% end %>
+            </tr>
+          <% end %>
+        </table>
+
+        <table>
+     	    <p><b>Renovables</b></p>  
+     	    <% structure.choices[4..10].each do |choice| %>
+            <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
+              <td class='name'>
+                <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
+                  <%= choice.name %>
+                </a>
+              </td>
+              <td class='help'>
+                <a title='Haga "click" para información sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+              </td>
+              <!-- One cell per level for that choice -->
+              <% choice.levels.each.with_index do |level,i| %>
+                <td class='choice'>
+                  <a href='#' data-choicenumber='<%= choice.number %>' data-choicelevel='<%= i+1 %>' id='c<%= choice.number %>l<%= i+1%>' title='<%= choice.descriptions[i] %>' class='choiceLink' >
+                    <%= level %>
+                </a>
+              </td>
+            <% end %>
+            </tr>
+          <% end %>
+        </table>
+
+		<table>
+     	    <p><b>Producción fósil</b></p>  
+     	    <% structure.choices[30..30].each do |choice| %>
+            <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
+              <td class='name'>
+                <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
+                  <%= choice.name %>
+                </a>
+              </td>
+              <td class='help'>
+                <a title='Haga "click" para información sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+              </td>
+              <!-- One cell per level for that choice -->
+              <% choice.levels.each.with_index do |level,i| %>
+                <td class='choice'>
+                  <a href='#' data-choicenumber='<%= choice.number %>' data-choicelevel='<%= i+1 %>' id='c<%= choice.number %>l<%= i+1%>' title='<%= choice.descriptions[i] %>' class='choiceLink' >
+                    <%= level %>
+                </a>
+              </td>
+            <% end %>
+            </tr>
+          <% end %>
+        </table>
+
       </div>
       <!-- The right column -->
       <div id='other'>
         <table>
           <!-- this should actually go up to choice 42, but that isn't ready for prime time yet -->
-          <% structure.choices[30..31].each do |choice| %>
+          <p><b>Almacenamiento y balance energético</b></p> 
+          <% structure.choices[29..29].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
                   <%= choice.name %>
                 </a>
               </td>
-              <td class='help'>
-                <a title='Click for more detail on what choices <%= choice.levels.to_a.join(' ')%> mean.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+             <td class='help'>
+                <a title='Haga "click" para información sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
               </td>
               <!-- One cell per level for that choice -->
               <% choice.levels.each.with_index do |level,i| %>
@@ -180,7 +342,7 @@
     <div id='tooltip'></div>
     <div id='footer'>
       <!-- Change this to link to your country's website -->
-      Todos los supuestos y cálculos están disponibles en una hoja de cálculo. Descarga <a href='/model.xlsx'>Excel <%= structure.reported_calculator_version %> <%= %></a> (<a href='http://2050-calculator-tool-wiki.decc.gov.uk/pages/140'>Version history</a>). El código fuente para este sitio también está disponible bajo una licencia de código libre en <a href='http://github.com/decc/twenty-fifty'>http://github.com/decc/twenty-fifty</a>
+      Todos los supuestos y cálculos están disponibles en una hoja de cálculo. Descarga <a href='/model.xlsx'>Excel <%= structure.reported_calculator_version %> <%= %></a> (<a href='http://2050-calculator-tool-wiki.decc.gov.uk/pages/140'>Version history</a>). El código fuente para este sitio también está disponible bajo una licencia de código libre en <a href='http://github.com/Biopirata/mexico-twenty-fifty'>https://github.com/Biopirata/mexico-twenty-fifty</a>
     </div>
     <!-- The following html is only displayed on screen when a user selects a particular view -->
     <div id='snippets'>
