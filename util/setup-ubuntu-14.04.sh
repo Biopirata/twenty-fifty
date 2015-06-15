@@ -10,8 +10,8 @@ fi
 
 # The next thing we need to do is check we are running the right version of Ubuntu
 . /etc/lsb-release # This loads variables which contain the Ubuntu version
-if [ "$DISTRIB_ID" != 'Ubuntu' ] || [ "$DISTRIB_RELEASE" != '12.04' ]; then
-  echo "This script is only tested with Ubuntu 12.04. (your system is reported as $DISTRIB_ID $DISTRIB_RELEASE)"
+if [ "$DISTRIB_ID" != 'Ubuntu' ] || [ "$DISTRIB_RELEASE" != '14.04' ]; then
+  echo "This script is only tested with Ubuntu 14.04. (your system is reported as $DISTRIB_ID $DISTRIB_RELEASE)"
   exit 1
 fi
 
@@ -36,10 +36,10 @@ sudo apt-get install -y python-software-properties # For the apt-add-repository 
 # Install ruby 2.1 and make it the default
 sudo apt-add-repository -y ppa:brightbox/ruby-ng # See 
 sudo apt-get update
-sudo apt-get install -y ruby2.1 # Install ruby 2.1. 
-sudo apt-get install -y ruby2.1-dev  # Also need development headers for some gems
+sudo apt-get install -y ruby2.2.2 # Install ruby 2.2.2. 
+sudo apt-get install -y ruby2.2.2-dev  # Also need development headers for some gems
 sudo apt-get install ruby-switch # Allows us to change the default ruby on the system
-sudo ruby-switch --set ruby2.1 # Make version 2.1 the default ruby
+sudo ruby-switch --set ruby2.2.2 # Make version 2.2.2 the default ruby
 sudo gem pristine --all --only-executables # Attempt to ensure that old commands point to the new ruby
 
 # Install the ruby package manager
