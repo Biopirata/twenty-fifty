@@ -33,7 +33,7 @@ sudo apt-get install -y python-software-properties # For the apt-add-repository 
 # For Ubuntu > 12.10
 # sudo apt-get install software-properties-common
 
-# Install ruby 2.1 and make it the default
+# Install ruby 2.2 and make it the default
 sudo apt-add-repository -y ppa:brightbox/ruby-ng # See 
 sudo apt-get update
 sudo apt-get install -y ruby2.2 # Install ruby 2.2. 
@@ -44,7 +44,7 @@ sudo gem pristine --all --only-executables # Attempt to ensure that old commands
 
 # Install the ruby package manager
 sudo gem install bundler --no-ri --no-rdoc
-
+  
 ## THE CODE
 function download_code_from_github {
   echo
