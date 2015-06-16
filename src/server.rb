@@ -24,7 +24,7 @@ module Helper
 end
 
 
-  enable :lock # The C 2050 model is not thread safe
+enable :lock # The C 2050 model is not thread safe
 
   # This allows users to download the excel spreadsheet version of the model
   get '/model.xlsx' do
