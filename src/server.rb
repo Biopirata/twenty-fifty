@@ -33,7 +33,6 @@ enable :lock # The C 2050 model is not thread safe
 
   # This has the methods needed to dynamically create the view
   if development?
-
     helpers Helper
     set :views, settings.root 
     
