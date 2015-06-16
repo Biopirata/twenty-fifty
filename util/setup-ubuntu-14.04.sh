@@ -36,10 +36,10 @@ sudo apt-get install -y python-software-properties # For the apt-add-repository 
 # Install ruby 2.1 and make it the default
 sudo apt-add-repository -y ppa:brightbox/ruby-ng # See 
 sudo apt-get update
-sudo apt-get install -y ruby2.2.2 # Install ruby 2.2.2. 
-sudo apt-get install -y ruby2.2.2-dev  # Also need development headers for some gems
+sudo apt-get install -y ruby2.2 # Install ruby 2.2. 
+sudo apt-get install -y ruby2.2-dev  # Also need development headers for some gems
 sudo apt-get install ruby-switch # Allows us to change the default ruby on the system
-sudo ruby-switch --set ruby2.2.2 # Make version 2.2.2 the default ruby
+sudo ruby-switch --set ruby2.2 # Make version 2.2 the default ruby
 sudo gem pristine --all --only-executables # Attempt to ensure that old commands point to the new ruby
 
 # Install the ruby package manager
@@ -50,7 +50,7 @@ function download_code_from_github {
   echo
   echo "***************"
   echo
-  read -ep "Enter the url of the github repository (just press ENTER to accept the default): " -i "https://github.com/decc/twenty-fifty" GITHUB
+  read -ep "Enter the url of the github repository (just press ENTER to accept the default): " -i "https://github.com/Biopirata/mexico-twenty-fifty" GITHUB
   echo
   echo "***************"
   echo
@@ -136,7 +136,7 @@ server {
   root $twentyfiftyserverroot;
 
   passenger_enabled on;
-  passenger_ruby /usr/bin/ruby2.1;
+  passenger_ruby /usr/bin/ruby2.2;
 }
 EndConf
 
