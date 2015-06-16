@@ -17,8 +17,8 @@ CMD ["/sbin/my_init"]
 # Clean up APT when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-# Make sure we are using Ruby 2.1
-RUN ruby-switch --set ruby2.1
+# Make sure we are using Ruby 2.2
+RUN ruby-switch --set ruby2.2
 
 # Add the nginx configuration for the server which will be on port 8080
 ADD util/nginx.conf /etc/nginx/sites-enabled/2050.conf
