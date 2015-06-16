@@ -1958,7 +1958,9 @@ class Model
     attach_function 'control_f66', [], ExcelValue.by_value
     attach_function 'control_n1', [], ExcelValue.by_value
     # end of Control
+    # end of Structure of the model
     # end of Preferences
+    # end of Indicators
     attach_function 'intermediate_output_b2', [], ExcelValue.by_value
     attach_function 'intermediate_output_h3', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay3', [], ExcelValue.by_value
@@ -4853,7 +4855,6 @@ class Model
     attach_function 'intermediate_output_bk278', [], ExcelValue.by_value
     attach_function 'intermediate_output_bl278', [], ExcelValue.by_value
     # end of Intermediate output
-    # end of Indicators
     attach_function 'energy_d17', [], ExcelValue.by_value
     attach_function 'energy_e17', [], ExcelValue.by_value
     attach_function 'energy_f17', [], ExcelValue.by_value
@@ -7836,7 +7837,6 @@ class Model
     # end of Conversions
     # end of Global assumptions
     # end of Constants
-    # end of Structure of the model
     # end of I.a
     # end of I.b
     # end of II.a
