@@ -2,6 +2,8 @@ source 'http://rubygems.org'
 ruby "2.1.6"
 # Framework
 gem 'sinatra'
+# Adición de thin como prueba
+gem 'thin'
 
 # Views
 gem 'json'
