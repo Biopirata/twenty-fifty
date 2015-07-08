@@ -128,7 +128,8 @@ sudo apt-get install -y nginx-extras passenger
 sudo sed --in-place "s/# passenger_root/passenger_root/g" /etc/nginx/nginx.conf
 
 # Create the server configuration file
-twentyfiftyserverroot=$(pwd)/public
+# se sustituyó la dirección por la definitiva en el servidor twentyfiftyserverroot=$(pwd)/public
+twentyfiftyserverroot=/home/ubuntu/mexico-twenty-fifty/public
 cat <<EndConf > ngnix-configuration.conf
 server {
   listen 80 default_server;

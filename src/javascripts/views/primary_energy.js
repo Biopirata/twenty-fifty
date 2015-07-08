@@ -16,18 +16,18 @@ window.twentyfifty.views.primary_energy_chart = function() {
     this.final_energy_chart = timeSeriesStackedAreaChart()
       .title("Demanda Final de Energía")
       .unit('PJ/año')
-      .max_value(12000);
+      .max_value(18000);
 
     this.primary_energy_chart = timeSeriesStackedAreaChart()
       .title("Oferta de Energía Primaria")
       .unit('PJ/año')
-      .max_value(12000);
+      .max_value(18000);
 
     this.emissions_chart = timeSeriesStackedAreaChart()
       .title("Emisiones de Gases de Efecto Invernadero")
       .unit('MtCO2e/año')
       .min_value(-500)
-      .max_value(1000);
+      .max_value(1500);
   };
 
   // This is called when a new view has been selected
