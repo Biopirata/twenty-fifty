@@ -40,7 +40,7 @@
 
       <div id='name'>
         <!-- Change this to link to your country website -->
-        <a href='http://www.sener.gob.mx/'>Calculadora México 2050</a>
+        <a href='http://www.sener.gob.mx/'>Calculadora M&eacute;xico 2050</a>
       </div>
 
       <div id='examples'>
@@ -50,7 +50,7 @@
 
       <!-- To add or remove views from the web tool, alter the following section -->
       <div id='views'>
-        <a class='view' data-view='primary_energy_chart' href='#'>Energía</a>
+        <a class='view' data-view='primary_energy_chart' href='#'>Energ&iacute;a</a>
         <a class='view' data-view='electricity' href='#'>Electricidad</a>
         <a class='view' data-view='energy_security' href='#'>Seguridad</a>
         <a class='view' data-view='sankey' href='#'>Flujos</a>
@@ -60,7 +60,7 @@
         <a class='view' data-view='air_quality' href='#'>Aire</a>
         <a class='view' data-view='share' href='#'>Compartir</a>
         <!-- Change this to link to your own country website documentation -->
-        <a href='http://2050-calculator-tool-wiki.decc.gov.uk'>Documentación</a>
+        <a href='http://2050-calculator-tool-wiki.decc.gov.uk'>Documentaci&oacute;n</a>
       </div>
     </div>
 
@@ -94,7 +94,7 @@
         <table>
           <!-- One row per choice -->
          <p><b>Desarrollo urbano y transporte</b></p> 
-          <% structure.choices[15..21].each do |choice| %>
+          <% structure.choices[17..23].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -102,7 +102,7 @@
                 </a>
               </td>
               <td class='help'>
-                <a title='Haga "click" para información sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+                <a title='Haga "click" para informaci&oacute;n sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
               </td>
               <!-- One cell per level for that choice -->
               <% choice.levels.each.with_index do |level,i| %>
@@ -119,7 +119,7 @@
 		<table>
           <!-- One row per choice -->
           <p><b>Vivienda</b></p> 
-          <% structure.choices[22..28].each do |choice| %>
+          <% structure.choices[24..30].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -127,7 +127,7 @@
                 </a>
               </td>
               <td class='help'>
-                <a title='Haga "click" para información sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+                <a title='Haga "click" para informaci&oacute;n sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
               </td>
               <!-- One cell per level for that choice -->
               <% choice.levels.each.with_index do |level,i| %>
@@ -145,7 +145,7 @@
         <table>
           <!-- One row per choice -->
 		  <p><b>Industria</b></p> 
-          <% structure.choices[29..31].each do |choice| %>
+          <% structure.choices[31..33].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -153,7 +153,7 @@
                 </a>
               </td>
               <td class='help'>
-                <a title='Haga "click" para información sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+                <a title='Haga "click" para informaci&oacute;n sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
               </td>
               <!-- One cell per level for that choice -->
               <% choice.levels.each.with_index do |level,i| %>
@@ -170,8 +170,8 @@
 
 		<table>
           <!-- One row per choice -->
-		  <p><b>Comercio, servicios y sector público</b></p> 
-          <% structure.choices[32..33].each do |choice| %>
+		  <p><b>Comercio, servicios y sector p&uacute;blico</b></p> 
+          <% structure.choices[34..35].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -179,7 +179,7 @@
                 </a>
               </td>
               <td class='help'>
-                <a title='Haga "click" para información sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+                <a title='Haga "click" para informaci&oacute;n sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
               </td>
               <!-- One cell per level for that choice -->
               <% choice.levels.each.with_index do |level,i| %>
@@ -210,7 +210,7 @@
                 </a>
               </td>
              <td class='help'>
-                <a title='Haga "click" para información sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+                <a title='Haga "click" para informaci&oacute;n sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
               </td>
               <!-- One cell per level for that choice -->
               <% choice.levels.each.with_index do |level,i| %>
@@ -226,7 +226,7 @@
 
 
         <table>
-     	  <p><b>Generación fósil</b></p>  
+     	  <p><b>Generaci&oacute;n f&oacute;sil</b></p>  
           <% structure.choices[1..3].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
@@ -235,7 +235,7 @@
                 </a>
               </td>
              <td class='help'>
-                <a title='Haga "click" para información sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+                <a title='Haga "click" para informaci&oacute;n sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
               </td>
               <!-- One cell per level for that choice -->
               <% choice.levels.each.with_index do |level,i| %>
@@ -259,7 +259,7 @@
                 </a>
               </td>
               <td class='help'>
-                <a title='Haga "click" para información sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+                <a title='Haga "click" para informaci&oacute;n sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
               </td>
               <!-- One cell per level for that choice -->
               <% choice.levels.each.with_index do |level,i| %>
@@ -274,7 +274,7 @@
         </table>
 
  		<table>
-     	    <p><b>Renovables pequeña escala</b></p>  
+     	    <p><b>Renovables peque&ntilde;a escala</b></p>  
      	    <% structure.choices[9..10].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
@@ -283,7 +283,7 @@
                 </a>
               </td>
               <td class='help'>
-                <a title='Haga "click" para información sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+                <a title='Haga "click" para informaci&oacute;n sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
               </td>
               <!-- One cell per level for that choice -->
               <% choice.levels.each.with_index do |level,i| %>
@@ -299,8 +299,8 @@
 
 
         <table>
-          <p><b>Bioenergía y residuos</b></p>  
-          <% structure.choices[11..14].each do |choice| %>
+          <p><b>Bioenerg&iacute;a y residuos</b></p>  
+          <% structure.choices[11..16].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -308,7 +308,7 @@
                 </a>
               </td>
               <td class='help'>
-                <a title='Haga "click" para información sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+                <a title='Haga "click" para informaci&oacute;n sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
               </td>
               <!-- One cell per level for that choice -->
               <% choice.levels.each.with_index do |level,i| %>
@@ -324,8 +324,8 @@
 
 
 		    <table>
-     	    <p><b>Producción fósil</b></p>  
-     	    <% structure.choices[38..39].each do |choice| %>
+     	    <p><b>Producci&oacute;n f&oacute;sil</b></p>  
+     	    <% structure.choices[40..41].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -333,7 +333,7 @@
                 </a>
               </td>
               <td class='help'>
-                <a title='Haga "click" para información sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+                <a title='Haga "click" para informaci&oacute;n sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
               </td>
               <!-- One cell per level for that choice -->
               <% choice.levels.each.with_index do |level,i| %>
@@ -356,7 +356,7 @@
         <table>
           <!-- this should actually go up to choice 42, but that isn't ready for prime time yet -->
           <p><b>Bosques</b></p> 
-          <% structure.choices[34..36].each do |choice| %>
+          <% structure.choices[36..38].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -364,7 +364,7 @@
                 </a>
               </td>
              <td class='help'>
-                <a title='Haga "click" para información sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+                <a title='Haga "click" para informaci&oacute;n sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
               </td>
               <!-- One cell per level for that choice -->
               <% choice.levels.each.with_index do |level,i| %>
@@ -378,10 +378,10 @@
           <% end %>
         </table>
         
-         <table>
-          <!-- this should actually go up to choice 42, but that isn't ready for prime time yet -->
-          <p><b>Almacenamiento y balance energético</b></p> 
-          <% structure.choices[37..37].each do |choice| %>
+        <table>
+          
+          <p><b>Almacenamiento y balance energ&eacute;tico</b></p> 
+          <% structure.choices[39..39].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -389,7 +389,7 @@
                 </a>
               </td>
              <td class='help'>
-                <a title='Haga "click" para información sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+                <a title='Haga "click" para informaci&oacute;n sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
               </td>
               <!-- One cell per level for that choice -->
               <% choice.levels.each.with_index do |level,i| %>
@@ -407,15 +407,15 @@
         
         <h4>Notes</h4>
         <table id='notes'>
-          <tr><td id='firstcell'><div class='help'>?</div></td><td>Signo de interrogación te lleva a las descripciones de una página de cada elección</td></tr>
-          <tr><td><div class='level1'>1</div></td><td>Elección que refleja el menor esfuerzo posible.</td></tr>
-          <tr><td><div class='level2'>2</div></td><td>Considerada ambiciosa pero razonable por la mayoría de los expertos.</td></tr>
-          <tr><td><div class='level3'>3</div></td><td>Considerada poco probable sin cambios significativos al sistema actual y/o en las tecnologías.</td></tr>
-          <tr><td><div class='level4'>4</div></td><td>El límite superios de lo que se cree es físicamente posible por el observador más optimista.</td></tr>
-          <tr><td><div class='alternate'>A</div>&ndash;<div class='alternate'>D</div></td><td>Un rango de opciones donde una alternativa no es necesariamente más difícil que otra</td></tr>
-          <tr class='primary_energy_notes'><td>Total empleado en México<sup>1</sup></td><td>La oferta de energía primaria es normalmente más alta que la demanda final, debido a la energía usada para generar electricidad.</td></tr>
-          <tr class='primary_energy_notes'><td>Metas<sup>2</sup></td><td>Las metas excluyen aviación y transporte marítimo internacional.</td></tr>
-          <tr class='primary_energy_notes'><td>Total<sup>3</sup></td><td>El total incluye la reducción en emisiones de captura y almacenamiento de carbono y del crecimiento de nueva biomasa para reemplazar la usada (crédito por bioenergía).</td></tr> 
+          <tr><td id='firstcell'><div class='help'>?</div></td><td>Signo de interrogaci&oacute;n te lleva a las descripciones de una p&aacute;gina de cada elecci&oacute;n</td></tr>
+          <tr><td><div class='level1'>1</div></td><td>Elecci&oacute;n que refleja el menor esfuerzo posible.</td></tr>
+          <tr><td><div class='level2'>2</div></td><td>Considerada ambiciosa pero razonable por la mayor&iacute;a de los expertos.</td></tr>
+          <tr><td><div class='level3'>3</div></td><td>Considerada poco probable sin cambios significativos al sistema actual y/o en las tecnolog&iacute;as.</td></tr>
+          <tr><td><div class='level4'>4</div></td><td>El l&iacute;mite superios de lo que se cree es f&iacute;sicamente posible por el observador m&aacute;s optimista.</td></tr>
+          <tr><td><div class='alternate'>A</div>&ndash;<div class='alternate'>D</div></td><td>Un rango de opciones donde una alternativa no es necesariamente m&aacute;s dif&iacute;cil que otra</td></tr>
+          <tr class='primary_energy_notes'><td>Total empleado en M&eacute;xico<sup>1</sup></td><td>La oferta de energ&iacute;a primaria es normalmente m&aacute;s alta que la demanda final, debido a la energ&iacute;a usada para generar electricidad.</td></tr>
+          <tr class='primary_energy_notes'><td>Metas<sup>2</sup></td><td>Las metas excluyen aviaci&oacute;n y transporte mar&iacute;timo internacional.</td></tr>
+          <tr class='primary_energy_notes'><td>Total<sup>3</sup></td><td>El total incluye la reducci&oacute;n en emisiones de captura y almacenamiento de carbono y del crecimiento de nueva biomasa para reemplazar la usada (cr&eacute;dito por bioenerg&iacute;a).</td></tr> 
       </table>
       </div>
     </div>
@@ -423,7 +423,7 @@
     <div id='tooltip'></div>
     <div id='footer'>
       <!-- Change this to link to your country's website -->
-      Todos los supuestos y cálculos están disponibles en una hoja de cálculo. Descarga <a href='/model.xlsx'>Excel <%= structure.reported_calculator_version %> <%= %></a> (<a href='http://2050-calculator-tool-wiki.decc.gov.uk/pages/140'>Version history</a>). El código fuente para este sitio también está disponible bajo una licencia de código libre en <a href='http://github.com/Biopirata/mexico-twenty-fifty'>https://github.com/Biopirata/mexico-twenty-fifty</a>
+      Todos los supuestos y c&aacute;lculos est&aacute;n disponibles en una hoja de c&aacute;lculo. Descarga <a href='/model.xlsx'>Excel <%= structure.reported_calculator_version %> <%= %></a> (<a href='http://2050-calculator-tool-wiki.decc.gov.uk/pages/140'>Version history</a>). El c&oacute;digo fuente para este sitio tambi&eacute;n est&aacute; disponible bajo una licencia de c&oacute;digo libre en <a href='http://github.com/Biopirata/mexico-twenty-fifty'>https://github.com/Biopirata/mexico-twenty-fifty</a>
     </div>
     <!-- The following html is only displayed on screen when a user selects a particular view -->
     <div id='snippets'>
@@ -446,20 +446,20 @@
           <div class='airquality'>
             <h1>Impacto de tu escenario sobre la calidad del aire</h1>
             <div class='airqualitymessage' id='airqualitymessage'>
-              El daño a la salud humana asociado a la contaminación atmosférica de este escenario, principalmente por partículas suspendidas, podría ser de alrededor de <span id='airquality_range_start'></span><span id='airquality_range_end'></span> en 2050, comparado con el 2010. <span id='air_quality_worse'> </span>
+              El da&ntilde;o a la salud humana asociado a la contaminaci&oacute;n atmosf&eacute;rica de este escenario, principalmente por part&iacute;culas suspendidas, podr&iacute;a ser de alrededor de <span id='airquality_range_start'></span><span id='airquality_range_end'></span> en 2050, comparado con el 2010. <span id='air_quality_worse'> </span>
           </div>
             <div id='airquality'></div>
             <div class='airqualitymessage'>
-              <h2>Cómo interpetar los resultados:</h2>
+              <h2>C&oacute;mo interpetar los resultados:</h2>
               <ul>
-                <li>El índice de impacto a la salud de la calidad del aire &mdash; este índice mide el efecto sobre la salud humana proveniente de las partículas suspendidas y otros contaminantes tales como los óxidos de nitrógeno.  Por ejemplo, estos contaminantes se han asociado a muertes prematuras causadas por daños al corazón y los pulmones. 2010 es el año base (100). Un número menor a 100 indica una reducción en la contaminación atmosférica y sus impactos asociados en salud, mientras que un valor más alto indica un aumento en los impactos. Este índice refleja la concentración promedio de contaminantes en México. No provee información sobre áreas de alta concentración de contaminantes. </li>
-                <li>Nivel alto del rango entramado &mdash; peor escenario de contaminación atmosférica donde no hay mayor introducción de medidas de control de la contaminación entre hoy y el 2050.</li>
-                <li>Nivel bajo del rango entramado &mdash; mejor escenario donde la innovación mejora radicalmente la tecnología de control de la contaminación y es instrumentada entre hoy y el 2050. </li>
+                <li>El &iacute;ndice de impacto a la salud de la calidad del aire &mdash; este &iacute;ndice mide el efecto sobre la salud humana proveniente de las part&iacute;culas suspendidas y otros contaminantes tales como los &oacute;xidos de nitr&oacute;geno.  Por ejemplo, estos contaminantes se han asociado a muertes prematuras causadas por da&ntilde;os al coraz&oacute;n y los pulmones. 2010 es el a&ntilde;o base (100). Un n&uacute;mero menor a 100 indica una reducci&oacute;n en la contaminaci&oacute;n atmosf&eacute;rica y sus impactos asociados en salud, mientras que un valor m&aacute;s alto indica un aumento en los impactos. Este &iacute;ndice refleja la concentraci&oacute;n promedio de contaminantes en M&eacute;xico. No provee informaci&oacute;n sobre &aacute;reas de alta concentraci&oacute;n de contaminantes. </li>
+                <li>Nivel alto del rango entramado &mdash; peor escenario de contaminaci&oacute;n atmosf&eacute;rica donde no hay mayor introducci&oacute;n de medidas de control de la contaminaci&oacute;n entre hoy y el 2050.</li>
+                <li>Nivel bajo del rango entramado &mdash; mejor escenario donde la innovaci&oacute;n mejora radicalmente la tecnolog&iacute;a de control de la contaminaci&oacute;n y es instrumentada entre hoy y el 2050. </li>
               </ul>
               <p>
-              Agradecemos su retroalimentación sobre la 
-              <a href="http://2050-calculator-tool-wiki.decc.gov.uk/pages/80">metodología</a> usada para calcular el impacto de su escenario sobre la calidad del aire.
-              También puede descargar la versión excel de la calculadora México 2050 para ver diferentes tipos de contaminación atmosférica y la importancia relativa de las diferentes fuentes. 
+              Agradecemos su retroalimentaci&oacute;n sobre la 
+              <a href="http://2050-calculator-tool-wiki.decc.gov.uk/pages/80">metodolog&iacute;a</a> usada para calcular el impacto de su escenario sobre la calidad del aire.
+              Tambi&eacute;n puede descargar la versi&oacute;n excel de la calculadora M&eacute;xico 2050 para ver diferentes tipos de contaminaci&oacute;n atmosf&eacute;rica y la importancia relativa de las diferentes fuentes. 
               </p>
             </div>
           </div>
@@ -467,25 +467,25 @@
         <div id="energysecurity">
           <div id="balancing" class="column">
             <h2>Balanceo de la demanda y oferta de electricidad</h2>
-            <p id='autobuild_text'> Se asume que se construyen <span id='pathway_balancing_ccgt'></span> GW de capacidad de generación a base de gas para cubrir la brecha entre la demanda promedio de energía y la cantidad de generación baja en carbono seleccionada en el escenario.</p>
-            <p>Esta heramienta no modela la operación horaria, diaria o incluso estacional de la red. Presenta sólo promedios anuales. Por tanto, no representa de manera correcta los picos y valles de demanda energética.</p>
-            <p>Para atender esta limitación, la herramienta aplica una prueba simulada de estrés considerando un pico de calor en un contexto de poco viento. Esto se describe con mayor detall en [en construcción] <a href="/assets/onepage/49.pdf" target="_new">here</a>. En este caso, la prueba de stress implica que podrían requerirse <span id='pathway_balancing_peaking'></span> GW de capacidad para cubrir los picos de demanda.</p>
-            <p>Puedes influenciar la capacidad requerida para demanda pico cambiando el nivel de "almacenamiento, desplazamiento de demanda e intercomección", reduciendo la cantidad de generación renovable intermitente, o reduciendo la demanda de electricidad</p>
+            <p id='autobuild_text'> Se asume que se construyen <span id='pathway_balancing_ccgt'></span> GW de capacidad de generaci&oacute;n a base de gas para cubrir la brecha entre la demanda promedio de energ&iacute;a y la cantidad de generaci&oacute;n baja en carbono seleccionada en el escenario.</p>
+            <p>Esta heramienta no modela la operaci&oacute;n horaria, diaria o incluso estacional de la red. Presenta s&oacute;lo promedios anuales. Por tanto, no representa de manera correcta los picos y valles de demanda energ&eacute;tica.</p>
+            <p>Para atender esta limitaci&oacute;n, la herramienta aplica una prueba simulada de estr&eacute;s considerando un pico de calor en un contexto de poco viento. Esto se describe con mayor detall en [en construcci&oacute;n] <a href="/assets/onepage/49.pdf" target="_new">here</a>. En este caso, la prueba de stress implica que podr&iacute;an requerirse <span id='pathway_balancing_peaking'></span> GW de capacidad para cubrir los picos de demanda.</p>
+            <p>Puedes influenciar la capacidad requerida para demanda pico cambiando el nivel de "almacenamiento, desplazamiento de demanda e intercomecci&oacute;n", reduciendo la cantidad de generaci&oacute;n renovable intermitente, o reduciendo la demanda de electricidad</p>
           </div>
           <div id="imports" class="column">
-            <h2>Dependencia sobre energía importada</h2>
-            <p>La calculadora supone que cualquier biomasa disponible es preferida sobre los combustibles fósiles y que los combustibles producidos domésticamente son mejores que los importados. Supone que se importan combustibles fósiles para cubrir demanda no satisfecha.</p>
+            <h2>Dependencia sobre energ&iacute;a importada</h2>
+            <p>La calculadora supone que cualquier biomasa disponible es preferida sobre los combustibles f&oacute;siles y que los combustibles producidos dom&eacute;sticamente son mejores que los importados. Supone que se importan combustibles f&oacute;siles para cubrir demanda no satisfecha.</p>
             <table id="imports">
               <tr><th class="description"></th><th colspan="2" class="year">2010</th><th></th><th colspan="2" class="year">2050</th></tr>
               <tr><th class="description">Imports</th><th class="value">TWh/yr</th><th class="value">%</th><th></th><th class="value">TWh/yr</th><th class="value">%</th></tr>
             </table>
           </div>
           <div id="diversity" class="column">
-            <h2>Diversidad de fuentes de energía</h2>
-            <p>Puede haber un beneficio de mantener una diversidad de fuentes de energía:</p>
+            <h2>Diversidad de fuentes de energ&iacute;a</h2>
+            <p>Puede haber un beneficio de mantener una diversidad de fuentes de energ&iacute;a:</p>
             <table id="diversity">
               <tbody>
-              <tr><th class="description">Proporción de la oferta energética</th><th class="year">2010</th><th></th><th class="year">2050</th></tr>
+              <tr><th class="description">Proporci&oacute;n de la oferta energ&eacute;tica</th><th class="year">2010</th><th></th><th class="year">2050</th></tr>
               </tbody>
             </table>
           </div>
