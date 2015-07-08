@@ -1,6 +1,8 @@
 require_relative 'server'
 
 # When in production mode, we precompile the templates and javascripts
+# México
+
 class CompileTemplate
   include Helper
 
@@ -55,7 +57,7 @@ class CompileTemplate
     assets = JSON.parse(IO.readlines(manifest_file).join)['assets']
 
     input = IO.readlines(erb_file).join
-    File.open(html_file, 'w') do |f|
+    File.open(html_file,'w:UTF-8') do |f|
       f.puts ERB.new(input).result(binding)
     end
   end

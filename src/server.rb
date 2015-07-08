@@ -1,5 +1,6 @@
 # encoding: utf-8
 # México
+
 require 'sinatra'
 require 'erb'
 require 'json'
