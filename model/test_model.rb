@@ -192,363 +192,355 @@ class TestModel < Minitest::Unit::TestCase
   def test_control_n5; assert_in_delta(1.0, worksheet.control_n5, 0.002); end
   def test_control_o5; assert_in_epsilon(4.0, worksheet.control_o5, 0.002); end
   def test_control_p5; assert_in_delta(1.0, worksheet.control_p5, 0.002); end
-  def test_control_q5; assert_in_delta(1.0, worksheet.control_q5, 0.002); end
-  def test_control_r5; assert_in_delta(1.0, worksheet.control_r5, 0.002); end
+  def test_control_q5; assert_in_epsilon(3.0, worksheet.control_q5, 0.002); end
+  def test_control_r5; assert_in_epsilon(4.0, worksheet.control_r5, 0.002); end
   def test_control_s5; assert_in_delta(1.0, worksheet.control_s5, 0.002); end
-  def test_control_t5; assert_in_delta(1.0, worksheet.control_t5, 0.002); end
-  def test_control_u5; assert_in_delta(1.0, worksheet.control_u5, 0.002); end
+  def test_control_t5; assert_in_epsilon(4.0, worksheet.control_t5, 0.002); end
+  def test_control_u5; assert_in_epsilon(4.0, worksheet.control_u5, 0.002); end
   def test_control_n6; assert_in_delta(1.0, worksheet.control_n6, 0.002); end
   def test_control_o6; assert_in_epsilon(4.0, worksheet.control_o6, 0.002); end
   def test_control_p6; assert_in_delta(1.0, worksheet.control_p6, 0.002); end
-  def test_control_q6; assert_in_delta(1.0, worksheet.control_q6, 0.002); end
-  def test_control_r6; assert_in_delta(1.0, worksheet.control_r6, 0.002); end
-  def test_control_s6; assert_in_delta(1.0, worksheet.control_s6, 0.002); end
-  def test_control_t6; assert_in_delta(1.0, worksheet.control_t6, 0.002); end
-  def test_control_u6; assert_in_delta(1.0, worksheet.control_u6, 0.002); end
+  def test_control_q6; assert_in_epsilon(3.0, worksheet.control_q6, 0.002); end
+  def test_control_r6; assert_in_epsilon(4.0, worksheet.control_r6, 0.002); end
+  def test_control_s6; assert_in_epsilon(4.0, worksheet.control_s6, 0.002); end
+  def test_control_t6; assert_in_epsilon(4.0, worksheet.control_t6, 0.002); end
+  def test_control_u6; assert_in_epsilon(4.0, worksheet.control_u6, 0.002); end
   def test_control_n8; assert_in_delta(1.0, worksheet.control_n8, 0.002); end
   def test_control_o8; assert_in_epsilon(4.0, worksheet.control_o8, 0.002); end
   def test_control_p8; assert_in_delta(1.0, worksheet.control_p8, 0.002); end
-  def test_control_q8; assert_in_delta(1.0, worksheet.control_q8, 0.002); end
+  def test_control_q8; assert_in_epsilon(3.0, worksheet.control_q8, 0.002); end
   def test_control_r8; assert_in_delta(1.0, worksheet.control_r8, 0.002); end
   def test_control_s8; assert_in_delta(1.0, worksheet.control_s8, 0.002); end
-  def test_control_t8; assert_in_delta(1.0, worksheet.control_t8, 0.002); end
-  def test_control_u8; assert_in_delta(1.0, worksheet.control_u8, 0.002); end
+  def test_control_t8; assert_in_epsilon(4.0, worksheet.control_t8, 0.002); end
+  def test_control_u8; assert_in_epsilon(4.0, worksheet.control_u8, 0.002); end
   def test_control_n9; assert_in_delta(1.0, worksheet.control_n9, 0.002); end
-  def test_control_o9; assert_in_epsilon(3.0, worksheet.control_o9, 0.002); end
+  def test_control_o9; assert_in_delta(1.0, worksheet.control_o9, 0.002); end
   def test_control_p9; assert_in_delta(1.0, worksheet.control_p9, 0.002); end
-  def test_control_q9; assert_in_delta(1.0, worksheet.control_q9, 0.002); end
+  def test_control_q9; assert_in_epsilon(3.0, worksheet.control_q9, 0.002); end
   def test_control_r9; assert_in_delta(1.0, worksheet.control_r9, 0.002); end
   def test_control_s9; assert_in_delta(1.0, worksheet.control_s9, 0.002); end
-  def test_control_t9; assert_in_delta(1.0, worksheet.control_t9, 0.002); end
-  def test_control_u9; assert_in_delta(1.0, worksheet.control_u9, 0.002); end
+  def test_control_t9; assert_in_epsilon(4.0, worksheet.control_t9, 0.002); end
+  def test_control_u9; assert_in_epsilon(4.0, worksheet.control_u9, 0.002); end
   def test_control_n10; assert_in_delta(1.0, worksheet.control_n10, 0.002); end
   def test_control_o10; assert_in_epsilon(4.0, worksheet.control_o10, 0.002); end
   def test_control_p10; assert_in_delta(1.0, worksheet.control_p10, 0.002); end
-  def test_control_q10; assert_in_delta(1.0, worksheet.control_q10, 0.002); end
-  def test_control_r10; assert_in_delta(1.0, worksheet.control_r10, 0.002); end
-  def test_control_s10; assert_in_delta(1.0, worksheet.control_s10, 0.002); end
+  def test_control_q10; assert_in_epsilon(3.0, worksheet.control_q10, 0.002); end
+  def test_control_r10; assert_in_epsilon(4.0, worksheet.control_r10, 0.002); end
+  def test_control_s10; assert_in_epsilon(4.0, worksheet.control_s10, 0.002); end
   def test_control_t10; assert_in_delta(1.0, worksheet.control_t10, 0.002); end
-  def test_control_u10; assert_in_delta(1.0, worksheet.control_u10, 0.002); end
+  def test_control_u10; assert_in_epsilon(4.0, worksheet.control_u10, 0.002); end
   def test_control_n11; assert_in_delta(1.0, worksheet.control_n11, 0.002); end
   def test_control_o11; assert_in_epsilon(4.0, worksheet.control_o11, 0.002); end
   def test_control_p11; assert_in_delta(1.0, worksheet.control_p11, 0.002); end
-  def test_control_q11; assert_in_delta(1.0, worksheet.control_q11, 0.002); end
-  def test_control_r11; assert_in_delta(1.0, worksheet.control_r11, 0.002); end
-  def test_control_s11; assert_in_delta(1.0, worksheet.control_s11, 0.002); end
+  def test_control_q11; assert_in_epsilon(3.0, worksheet.control_q11, 0.002); end
+  def test_control_r11; assert_in_epsilon(4.0, worksheet.control_r11, 0.002); end
+  def test_control_s11; assert_in_epsilon(4.0, worksheet.control_s11, 0.002); end
   def test_control_t11; assert_in_delta(1.0, worksheet.control_t11, 0.002); end
-  def test_control_u11; assert_in_delta(1.0, worksheet.control_u11, 0.002); end
+  def test_control_u11; assert_in_epsilon(4.0, worksheet.control_u11, 0.002); end
   def test_control_n12; assert_in_delta(1.0, worksheet.control_n12, 0.002); end
   def test_control_o12; assert_in_epsilon(4.0, worksheet.control_o12, 0.002); end
   def test_control_p12; assert_in_delta(1.0, worksheet.control_p12, 0.002); end
-  def test_control_q12; assert_in_delta(1.0, worksheet.control_q12, 0.002); end
-  def test_control_r12; assert_in_delta(1.0, worksheet.control_r12, 0.002); end
-  def test_control_s12; assert_in_delta(1.0, worksheet.control_s12, 0.002); end
+  def test_control_q12; assert_in_epsilon(3.0, worksheet.control_q12, 0.002); end
+  def test_control_r12; assert_in_epsilon(4.0, worksheet.control_r12, 0.002); end
+  def test_control_s12; assert_in_epsilon(4.0, worksheet.control_s12, 0.002); end
   def test_control_t12; assert_in_delta(1.0, worksheet.control_t12, 0.002); end
-  def test_control_u12; assert_in_delta(1.0, worksheet.control_u12, 0.002); end
+  def test_control_u12; assert_in_epsilon(4.0, worksheet.control_u12, 0.002); end
   def test_control_n13; assert_in_delta(1.0, worksheet.control_n13, 0.002); end
   def test_control_o13; assert_in_epsilon(4.0, worksheet.control_o13, 0.002); end
   def test_control_p13; assert_in_delta(1.0, worksheet.control_p13, 0.002); end
-  def test_control_q13; assert_in_delta(1.0, worksheet.control_q13, 0.002); end
-  def test_control_r13; assert_in_delta(1.0, worksheet.control_r13, 0.002); end
-  def test_control_s13; assert_in_delta(1.0, worksheet.control_s13, 0.002); end
+  def test_control_q13; assert_in_epsilon(3.0, worksheet.control_q13, 0.002); end
+  def test_control_r13; assert_in_epsilon(4.0, worksheet.control_r13, 0.002); end
+  def test_control_s13; assert_in_epsilon(4.0, worksheet.control_s13, 0.002); end
   def test_control_t13; assert_in_delta(1.0, worksheet.control_t13, 0.002); end
-  def test_control_u13; assert_in_delta(1.0, worksheet.control_u13, 0.002); end
+  def test_control_u13; assert_in_epsilon(4.0, worksheet.control_u13, 0.002); end
   def test_control_n14; assert_in_delta(1.0, worksheet.control_n14, 0.002); end
   def test_control_o14; assert_in_epsilon(4.0, worksheet.control_o14, 0.002); end
   def test_control_p14; assert_in_delta(1.0, worksheet.control_p14, 0.002); end
-  def test_control_q14; assert_in_delta(1.0, worksheet.control_q14, 0.002); end
-  def test_control_r14; assert_in_delta(1.0, worksheet.control_r14, 0.002); end
-  def test_control_s14; assert_in_delta(1.0, worksheet.control_s14, 0.002); end
+  def test_control_q14; assert_in_epsilon(3.0, worksheet.control_q14, 0.002); end
+  def test_control_r14; assert_in_epsilon(4.0, worksheet.control_r14, 0.002); end
+  def test_control_s14; assert_in_epsilon(4.0, worksheet.control_s14, 0.002); end
   def test_control_t14; assert_in_delta(1.0, worksheet.control_t14, 0.002); end
-  def test_control_u14; assert_in_delta(1.0, worksheet.control_u14, 0.002); end
+  def test_control_u14; assert_in_epsilon(4.0, worksheet.control_u14, 0.002); end
   def test_control_n15; assert_in_delta(1.0, worksheet.control_n15, 0.002); end
   def test_control_o15; assert_in_epsilon(4.0, worksheet.control_o15, 0.002); end
   def test_control_p15; assert_in_delta(1.0, worksheet.control_p15, 0.002); end
-  def test_control_q15; assert_in_delta(1.0, worksheet.control_q15, 0.002); end
-  def test_control_r15; assert_in_delta(1.0, worksheet.control_r15, 0.002); end
-  def test_control_s15; assert_in_delta(1.0, worksheet.control_s15, 0.002); end
+  def test_control_q15; assert_in_epsilon(3.0, worksheet.control_q15, 0.002); end
+  def test_control_r15; assert_in_epsilon(4.0, worksheet.control_r15, 0.002); end
+  def test_control_s15; assert_in_epsilon(4.0, worksheet.control_s15, 0.002); end
   def test_control_t15; assert_in_delta(1.0, worksheet.control_t15, 0.002); end
-  def test_control_u15; assert_in_delta(1.0, worksheet.control_u15, 0.002); end
+  def test_control_u15; assert_in_epsilon(4.0, worksheet.control_u15, 0.002); end
   def test_control_n16; assert_in_delta(1.0, worksheet.control_n16, 0.002); end
   def test_control_o16; assert_in_epsilon(4.0, worksheet.control_o16, 0.002); end
   def test_control_p16; assert_in_delta(1.0, worksheet.control_p16, 0.002); end
-  def test_control_q16; assert_in_delta(1.0, worksheet.control_q16, 0.002); end
-  def test_control_r16; assert_in_delta(1.0, worksheet.control_r16, 0.002); end
-  def test_control_s16; assert_in_delta(1.0, worksheet.control_s16, 0.002); end
+  def test_control_q16; assert_in_epsilon(3.0, worksheet.control_q16, 0.002); end
+  def test_control_r16; assert_in_epsilon(4.0, worksheet.control_r16, 0.002); end
+  def test_control_s16; assert_in_epsilon(4.0, worksheet.control_s16, 0.002); end
   def test_control_t16; assert_in_delta(1.0, worksheet.control_t16, 0.002); end
-  def test_control_u16; assert_in_delta(1.0, worksheet.control_u16, 0.002); end
+  def test_control_u16; assert_in_epsilon(4.0, worksheet.control_u16, 0.002); end
   def test_control_n18; assert_in_delta(1.0, worksheet.control_n18, 0.002); end
-  def test_control_o18; assert_in_delta(1.0, worksheet.control_o18, 0.002); end
+  def test_control_o18; assert_in_epsilon(4.0, worksheet.control_o18, 0.002); end
   def test_control_p18; assert_in_delta(1.0, worksheet.control_p18, 0.002); end
-  def test_control_q18; assert_in_delta(1.0, worksheet.control_q18, 0.002); end
-  def test_control_r18; assert_in_delta(1.0, worksheet.control_r18, 0.002); end
-  def test_control_s18; assert_in_delta(1.0, worksheet.control_s18, 0.002); end
+  def test_control_q18; assert_in_epsilon(3.0, worksheet.control_q18, 0.002); end
+  def test_control_r18; assert_in_epsilon(4.0, worksheet.control_r18, 0.002); end
+  def test_control_s18; assert_in_epsilon(4.0, worksheet.control_s18, 0.002); end
   def test_control_t18; assert_in_delta(1.0, worksheet.control_t18, 0.002); end
   def test_control_u18; assert_in_delta(1.0, worksheet.control_u18, 0.002); end
   def test_control_n19; assert_in_delta(1.0, worksheet.control_n19, 0.002); end
-  def test_control_o19; assert_in_delta(1.0, worksheet.control_o19, 0.002); end
+  def test_control_o19; assert_in_epsilon(4.0, worksheet.control_o19, 0.002); end
   def test_control_p19; assert_in_delta(1.0, worksheet.control_p19, 0.002); end
-  def test_control_q19; assert_in_delta(1.0, worksheet.control_q19, 0.002); end
-  def test_control_r19; assert_in_delta(1.0, worksheet.control_r19, 0.002); end
-  def test_control_s19; assert_in_delta(1.0, worksheet.control_s19, 0.002); end
-  def test_control_t19; assert_in_delta(1.0, worksheet.control_t19, 0.002); end
-  def test_control_u19; assert_in_delta(1.0, worksheet.control_u19, 0.002); end
+  def test_control_q19; assert_in_epsilon(3.0, worksheet.control_q19, 0.002); end
+  def test_control_r19; assert_in_epsilon(4.0, worksheet.control_r19, 0.002); end
+  def test_control_s19; assert_in_epsilon(4.0, worksheet.control_s19, 0.002); end
+  def test_control_t19; assert_in_epsilon(4.0, worksheet.control_t19, 0.002); end
+  def test_control_u19; assert_in_epsilon(4.0, worksheet.control_u19, 0.002); end
   def test_control_n20; assert_in_delta(1.0, worksheet.control_n20, 0.002); end
-  def test_control_o20; assert_in_delta(1.0, worksheet.control_o20, 0.002); end
+  def test_control_o20; assert_in_epsilon(4.0, worksheet.control_o20, 0.002); end
   def test_control_p20; assert_in_delta(1.0, worksheet.control_p20, 0.002); end
-  def test_control_q20; assert_in_delta(1.0, worksheet.control_q20, 0.002); end
-  def test_control_r20; assert_in_delta(1.0, worksheet.control_r20, 0.002); end
-  def test_control_s20; assert_in_delta(1.0, worksheet.control_s20, 0.002); end
-  def test_control_t20; assert_in_delta(1.0, worksheet.control_t20, 0.002); end
-  def test_control_u20; assert_in_delta(1.0, worksheet.control_u20, 0.002); end
+  def test_control_q20; assert_in_epsilon(3.0, worksheet.control_q20, 0.002); end
+  def test_control_r20; assert_in_epsilon(4.0, worksheet.control_r20, 0.002); end
+  def test_control_s20; assert_in_epsilon(4.0, worksheet.control_s20, 0.002); end
+  def test_control_t20; assert_in_epsilon(4.0, worksheet.control_t20, 0.002); end
+  def test_control_u20; assert_in_epsilon(4.0, worksheet.control_u20, 0.002); end
   def test_control_n22; assert_in_delta(1.0, worksheet.control_n22, 0.002); end
   def test_control_o22; assert_in_epsilon(4.0, worksheet.control_o22, 0.002); end
   def test_control_p22; assert_in_delta(1.0, worksheet.control_p22, 0.002); end
-  def test_control_q22; assert_in_delta(1.0, worksheet.control_q22, 0.002); end
-  def test_control_r22; assert_in_delta(1.0, worksheet.control_r22, 0.002); end
-  def test_control_s22; assert_in_delta(1.0, worksheet.control_s22, 0.002); end
-  def test_control_t22; assert_in_delta(1.0, worksheet.control_t22, 0.002); end
-  def test_control_u22; assert_in_delta(1.0, worksheet.control_u22, 0.002); end
+  def test_control_q22; assert_in_epsilon(3.0, worksheet.control_q22, 0.002); end
+  def test_control_r22; assert_in_epsilon(4.0, worksheet.control_r22, 0.002); end
+  def test_control_s22; assert_in_epsilon(4.0, worksheet.control_s22, 0.002); end
+  def test_control_t22; assert_in_epsilon(4.0, worksheet.control_t22, 0.002); end
+  def test_control_u22; assert_in_epsilon(4.0, worksheet.control_u22, 0.002); end
   def test_control_n23; assert_in_delta(1.0, worksheet.control_n23, 0.002); end
-  def test_control_o23; assert_in_delta(1.0, worksheet.control_o23, 0.002); end
+  def test_control_o23; assert_in_epsilon(4.0, worksheet.control_o23, 0.002); end
   def test_control_p23; assert_in_delta(1.0, worksheet.control_p23, 0.002); end
-  def test_control_q23; assert_in_delta(1.0, worksheet.control_q23, 0.002); end
-  def test_control_r23; assert_in_delta(1.0, worksheet.control_r23, 0.002); end
-  def test_control_s23; assert_in_delta(1.0, worksheet.control_s23, 0.002); end
-  def test_control_t23; assert_in_delta(1.0, worksheet.control_t23, 0.002); end
-  def test_control_u23; assert_in_delta(1.0, worksheet.control_u23, 0.002); end
+  def test_control_q23; assert_in_epsilon(3.0, worksheet.control_q23, 0.002); end
+  def test_control_r23; assert_in_epsilon(4.0, worksheet.control_r23, 0.002); end
+  def test_control_s23; assert_in_epsilon(4.0, worksheet.control_s23, 0.002); end
+  def test_control_t23; assert_in_epsilon(4.0, worksheet.control_t23, 0.002); end
+  def test_control_u23; assert_in_epsilon(4.0, worksheet.control_u23, 0.002); end
   def test_control_n24; assert_in_delta(1.0, worksheet.control_n24, 0.002); end
   def test_control_o24; assert_in_epsilon(4.0, worksheet.control_o24, 0.002); end
   def test_control_p24; assert_in_delta(1.0, worksheet.control_p24, 0.002); end
-  def test_control_q24; assert_in_delta(1.0, worksheet.control_q24, 0.002); end
-  def test_control_r24; assert_in_delta(1.0, worksheet.control_r24, 0.002); end
-  def test_control_s24; assert_in_delta(1.0, worksheet.control_s24, 0.002); end
+  def test_control_q24; assert_in_epsilon(3.0, worksheet.control_q24, 0.002); end
+  def test_control_r24; assert_in_epsilon(4.0, worksheet.control_r24, 0.002); end
+  def test_control_s24; assert_in_epsilon(4.0, worksheet.control_s24, 0.002); end
   def test_control_t24; assert_in_delta(1.0, worksheet.control_t24, 0.002); end
-  def test_control_u24; assert_in_delta(1.0, worksheet.control_u24, 0.002); end
+  def test_control_u24; assert_in_epsilon(4.0, worksheet.control_u24, 0.002); end
   def test_control_n25; assert_in_delta(1.0, worksheet.control_n25, 0.002); end
-  def test_control_o25; assert_in_epsilon(4.0, worksheet.control_o25, 0.002); end
+  def test_control_o25; assert_in_epsilon(2.0, worksheet.control_o25, 0.002); end
   def test_control_p25; assert_in_delta(1.0, worksheet.control_p25, 0.002); end
-  def test_control_q25; assert_in_delta(1.0, worksheet.control_q25, 0.002); end
-  def test_control_r25; assert_in_delta(1.0, worksheet.control_r25, 0.002); end
-  def test_control_s25; assert_in_delta(1.0, worksheet.control_s25, 0.002); end
-  def test_control_t25; assert_in_delta(1.0, worksheet.control_t25, 0.002); end
-  def test_control_u25; assert_in_delta(1.0, worksheet.control_u25, 0.002); end
+  def test_control_q25; assert_in_epsilon(2.0, worksheet.control_q25, 0.002); end
+  def test_control_r25; assert_in_epsilon(2.0, worksheet.control_r25, 0.002); end
+  def test_control_s25; assert_in_epsilon(2.0, worksheet.control_s25, 0.002); end
+  def test_control_t25; assert_in_epsilon(2.0, worksheet.control_t25, 0.002); end
+  def test_control_u25; assert_in_epsilon(2.0, worksheet.control_u25, 0.002); end
   def test_control_n30; assert_in_delta(1.0, worksheet.control_n30, 0.002); end
   def test_control_o30; assert_in_delta(1.0, worksheet.control_o30, 0.002); end
   def test_control_p30; assert_in_epsilon(4.0, worksheet.control_p30, 0.002); end
-  def test_control_q30; assert_in_delta(1.0, worksheet.control_q30, 0.002); end
-  def test_control_r30; assert_in_delta(1.0, worksheet.control_r30, 0.002); end
-  def test_control_s30; assert_in_delta(1.0, worksheet.control_s30, 0.002); end
-  def test_control_t30; assert_in_delta(1.0, worksheet.control_t30, 0.002); end
-  def test_control_u30; assert_in_delta(1.0, worksheet.control_u30, 0.002); end
+  def test_control_q30; assert_in_epsilon(3.0, worksheet.control_q30, 0.002); end
+  def test_control_r30; assert_in_epsilon(4.0, worksheet.control_r30, 0.002); end
+  def test_control_s30; assert_in_epsilon(4.0, worksheet.control_s30, 0.002); end
+  def test_control_t30; assert_in_epsilon(4.0, worksheet.control_t30, 0.002); end
+  def test_control_u30; assert_in_epsilon(4.0, worksheet.control_u30, 0.002); end
   def test_control_n31; assert_in_delta(1.0, worksheet.control_n31, 0.002); end
   def test_control_o31; assert_in_delta(1.0, worksheet.control_o31, 0.002); end
   def test_control_p31; assert_in_epsilon(4.0, worksheet.control_p31, 0.002); end
-  def test_control_q31; assert_in_delta(1.0, worksheet.control_q31, 0.002); end
-  def test_control_r31; assert_in_delta(1.0, worksheet.control_r31, 0.002); end
-  def test_control_s31; assert_in_delta(1.0, worksheet.control_s31, 0.002); end
-  def test_control_t31; assert_in_delta(1.0, worksheet.control_t31, 0.002); end
-  def test_control_u31; assert_in_delta(1.0, worksheet.control_u31, 0.002); end
+  def test_control_q31; assert_in_epsilon(3.0, worksheet.control_q31, 0.002); end
+  def test_control_r31; assert_in_epsilon(4.0, worksheet.control_r31, 0.002); end
+  def test_control_s31; assert_in_epsilon(4.0, worksheet.control_s31, 0.002); end
+  def test_control_t31; assert_in_epsilon(4.0, worksheet.control_t31, 0.002); end
+  def test_control_u31; assert_in_epsilon(4.0, worksheet.control_u31, 0.002); end
   def test_control_n32; assert_in_delta(1.0, worksheet.control_n32, 0.002); end
   def test_control_o32; assert_in_delta(1.0, worksheet.control_o32, 0.002); end
   def test_control_p32; assert_in_epsilon(4.0, worksheet.control_p32, 0.002); end
-  def test_control_q32; assert_in_delta(1.0, worksheet.control_q32, 0.002); end
-  def test_control_r32; assert_in_delta(1.0, worksheet.control_r32, 0.002); end
-  def test_control_s32; assert_in_delta(1.0, worksheet.control_s32, 0.002); end
-  def test_control_t32; assert_in_delta(1.0, worksheet.control_t32, 0.002); end
-  def test_control_u32; assert_in_delta(1.0, worksheet.control_u32, 0.002); end
+  def test_control_q32; assert_in_epsilon(3.0, worksheet.control_q32, 0.002); end
+  def test_control_r32; assert_in_epsilon(4.0, worksheet.control_r32, 0.002); end
+  def test_control_s32; assert_in_epsilon(4.0, worksheet.control_s32, 0.002); end
+  def test_control_t32; assert_in_epsilon(4.0, worksheet.control_t32, 0.002); end
+  def test_control_u32; assert_in_epsilon(4.0, worksheet.control_u32, 0.002); end
   def test_control_n34; assert_in_delta(1.0, worksheet.control_n34, 0.002); end
   def test_control_o34; assert_in_delta(1.0, worksheet.control_o34, 0.002); end
   def test_control_p34; assert_in_epsilon(4.0, worksheet.control_p34, 0.002); end
-  def test_control_q34; assert_in_delta(1.0, worksheet.control_q34, 0.002); end
-  def test_control_r34; assert_in_delta(1.0, worksheet.control_r34, 0.002); end
-  def test_control_s34; assert_in_delta(1.0, worksheet.control_s34, 0.002); end
-  def test_control_t34; assert_in_delta(1.0, worksheet.control_t34, 0.002); end
-  def test_control_u34; assert_in_delta(1.0, worksheet.control_u34, 0.002); end
+  def test_control_q34; assert_in_epsilon(3.0, worksheet.control_q34, 0.002); end
+  def test_control_r34; assert_in_epsilon(4.0, worksheet.control_r34, 0.002); end
+  def test_control_s34; assert_in_epsilon(4.0, worksheet.control_s34, 0.002); end
+  def test_control_t34; assert_in_epsilon(4.0, worksheet.control_t34, 0.002); end
+  def test_control_u34; assert_in_epsilon(4.0, worksheet.control_u34, 0.002); end
   def test_control_n35; assert_in_delta(1.0, worksheet.control_n35, 0.002); end
   def test_control_o35; assert_in_delta(1.0, worksheet.control_o35, 0.002); end
   def test_control_p35; assert_in_epsilon(4.0, worksheet.control_p35, 0.002); end
-  def test_control_q35; assert_in_delta(1.0, worksheet.control_q35, 0.002); end
-  def test_control_r35; assert_in_delta(1.0, worksheet.control_r35, 0.002); end
-  def test_control_s35; assert_in_delta(1.0, worksheet.control_s35, 0.002); end
-  def test_control_t35; assert_in_delta(1.0, worksheet.control_t35, 0.002); end
-  def test_control_u35; assert_in_delta(1.0, worksheet.control_u35, 0.002); end
+  def test_control_q35; assert_in_epsilon(3.0, worksheet.control_q35, 0.002); end
+  def test_control_r35; assert_in_epsilon(4.0, worksheet.control_r35, 0.002); end
+  def test_control_s35; assert_in_epsilon(4.0, worksheet.control_s35, 0.002); end
+  def test_control_t35; assert_in_epsilon(4.0, worksheet.control_t35, 0.002); end
+  def test_control_u35; assert_in_epsilon(4.0, worksheet.control_u35, 0.002); end
   def test_control_n37; assert_in_delta(1.0, worksheet.control_n37, 0.002); end
   def test_control_o37; assert_in_delta(1.0, worksheet.control_o37, 0.002); end
   def test_control_p37; assert_in_epsilon(4.0, worksheet.control_p37, 0.002); end
-  def test_control_q37; assert_in_delta(1.0, worksheet.control_q37, 0.002); end
-  def test_control_r37; assert_in_delta(1.0, worksheet.control_r37, 0.002); end
-  def test_control_s37; assert_in_delta(1.0, worksheet.control_s37, 0.002); end
-  def test_control_t37; assert_in_delta(1.0, worksheet.control_t37, 0.002); end
-  def test_control_u37; assert_in_delta(1.0, worksheet.control_u37, 0.002); end
+  def test_control_q37; assert_in_epsilon(3.0, worksheet.control_q37, 0.002); end
+  def test_control_r37; assert_in_epsilon(4.0, worksheet.control_r37, 0.002); end
+  def test_control_s37; assert_in_epsilon(4.0, worksheet.control_s37, 0.002); end
+  def test_control_t37; assert_in_epsilon(4.0, worksheet.control_t37, 0.002); end
+  def test_control_u37; assert_in_epsilon(4.0, worksheet.control_u37, 0.002); end
   def test_control_n38; assert_in_delta(1.0, worksheet.control_n38, 0.002); end
   def test_control_o38; assert_in_delta(1.0, worksheet.control_o38, 0.002); end
   def test_control_p38; assert_in_epsilon(4.0, worksheet.control_p38, 0.002); end
-  def test_control_q38; assert_in_delta(1.0, worksheet.control_q38, 0.002); end
-  def test_control_r38; assert_in_delta(1.0, worksheet.control_r38, 0.002); end
-  def test_control_s38; assert_in_delta(1.0, worksheet.control_s38, 0.002); end
-  def test_control_t38; assert_in_delta(1.0, worksheet.control_t38, 0.002); end
-  def test_control_u38; assert_in_delta(1.0, worksheet.control_u38, 0.002); end
+  def test_control_q38; assert_in_epsilon(3.0, worksheet.control_q38, 0.002); end
+  def test_control_r38; assert_in_epsilon(4.0, worksheet.control_r38, 0.002); end
+  def test_control_s38; assert_in_epsilon(4.0, worksheet.control_s38, 0.002); end
+  def test_control_t38; assert_in_epsilon(4.0, worksheet.control_t38, 0.002); end
+  def test_control_u38; assert_in_epsilon(4.0, worksheet.control_u38, 0.002); end
   def test_control_n42; assert_in_delta(1.0, worksheet.control_n42, 0.002); end
   def test_control_o42; assert_in_delta(1.0, worksheet.control_o42, 0.002); end
   def test_control_p42; assert_in_epsilon(4.0, worksheet.control_p42, 0.002); end
-  def test_control_q42; assert_in_delta(1.0, worksheet.control_q42, 0.002); end
-  def test_control_r42; assert_in_delta(1.0, worksheet.control_r42, 0.002); end
-  def test_control_s42; assert_in_delta(1.0, worksheet.control_s42, 0.002); end
-  def test_control_t42; assert_in_delta(1.0, worksheet.control_t42, 0.002); end
-  def test_control_u42; assert_in_delta(1.0, worksheet.control_u42, 0.002); end
+  def test_control_q42; assert_in_epsilon(3.0, worksheet.control_q42, 0.002); end
+  def test_control_r42; assert_in_epsilon(4.0, worksheet.control_r42, 0.002); end
+  def test_control_s42; assert_in_epsilon(4.0, worksheet.control_s42, 0.002); end
+  def test_control_t42; assert_in_epsilon(4.0, worksheet.control_t42, 0.002); end
+  def test_control_u42; assert_in_epsilon(4.0, worksheet.control_u42, 0.002); end
   def test_control_n43; assert_in_delta(1.0, worksheet.control_n43, 0.002); end
   def test_control_o43; assert_in_delta(1.0, worksheet.control_o43, 0.002); end
-  def test_control_p43; assert_in_delta(1.0, worksheet.control_p43, 0.002); end
-  def test_control_q43; assert_in_delta(1.0, worksheet.control_q43, 0.002); end
-  def test_control_r43; assert_in_delta(1.0, worksheet.control_r43, 0.002); end
-  def test_control_s43; assert_in_delta(1.0, worksheet.control_s43, 0.002); end
-  def test_control_t43; assert_in_delta(1.0, worksheet.control_t43, 0.002); end
-  def test_control_u43; assert_in_delta(1.0, worksheet.control_u43, 0.002); end
+  def test_control_p43; assert_in_epsilon(2.0, worksheet.control_p43, 0.002); end
+  def test_control_q43; assert_in_epsilon(2.0, worksheet.control_q43, 0.002); end
+  def test_control_r43; assert_in_epsilon(2.0, worksheet.control_r43, 0.002); end
+  def test_control_s43; assert_in_epsilon(2.0, worksheet.control_s43, 0.002); end
+  def test_control_t43; assert_in_epsilon(2.0, worksheet.control_t43, 0.002); end
+  def test_control_u43; assert_in_epsilon(2.0, worksheet.control_u43, 0.002); end
   def test_control_n44; assert_in_delta(1.0, worksheet.control_n44, 0.002); end
   def test_control_o44; assert_in_delta(1.0, worksheet.control_o44, 0.002); end
-  def test_control_p44; assert_in_delta(1.0, worksheet.control_p44, 0.002); end
-  def test_control_q44; assert_in_delta(1.0, worksheet.control_q44, 0.002); end
-  def test_control_r44; assert_in_delta(1.0, worksheet.control_r44, 0.002); end
-  def test_control_s44; assert_in_delta(1.0, worksheet.control_s44, 0.002); end
-  def test_control_t44; assert_in_delta(1.0, worksheet.control_t44, 0.002); end
-  def test_control_u44; assert_in_delta(1.0, worksheet.control_u44, 0.002); end
+  def test_control_p44; assert_in_epsilon(4.0, worksheet.control_p44, 0.002); end
+  def test_control_q44; assert_in_epsilon(3.0, worksheet.control_q44, 0.002); end
+  def test_control_r44; assert_in_epsilon(4.0, worksheet.control_r44, 0.002); end
+  def test_control_s44; assert_in_epsilon(4.0, worksheet.control_s44, 0.002); end
+  def test_control_t44; assert_in_epsilon(4.0, worksheet.control_t44, 0.002); end
+  def test_control_u44; assert_in_epsilon(4.0, worksheet.control_u44, 0.002); end
   def test_control_n45; assert_in_delta(1.0, worksheet.control_n45, 0.002); end
   def test_control_o45; assert_in_delta(1.0, worksheet.control_o45, 0.002); end
-  def test_control_p45; assert_in_delta(1.0, worksheet.control_p45, 0.002); end
-  def test_control_q45; assert_in_delta(1.0, worksheet.control_q45, 0.002); end
-  def test_control_r45; assert_in_delta(1.0, worksheet.control_r45, 0.002); end
-  def test_control_s45; assert_in_delta(1.0, worksheet.control_s45, 0.002); end
-  def test_control_t45; assert_in_delta(1.0, worksheet.control_t45, 0.002); end
-  def test_control_u45; assert_in_delta(1.0, worksheet.control_u45, 0.002); end
+  def test_control_p45; assert_in_epsilon(4.0, worksheet.control_p45, 0.002); end
+  def test_control_q45; assert_in_epsilon(3.0, worksheet.control_q45, 0.002); end
+  def test_control_r45; assert_in_epsilon(4.0, worksheet.control_r45, 0.002); end
+  def test_control_s45; assert_in_epsilon(4.0, worksheet.control_s45, 0.002); end
+  def test_control_t45; assert_in_epsilon(4.0, worksheet.control_t45, 0.002); end
+  def test_control_u45; assert_in_epsilon(4.0, worksheet.control_u45, 0.002); end
   def test_control_n47; assert_in_delta(1.0, worksheet.control_n47, 0.002); end
   def test_control_o47; assert_in_delta(1.0, worksheet.control_o47, 0.002); end
-  def test_control_p47; assert_in_delta(1.0, worksheet.control_p47, 0.002); end
-  def test_control_q47; assert_in_delta(1.0, worksheet.control_q47, 0.002); end
-  def test_control_r47; assert_in_delta(1.0, worksheet.control_r47, 0.002); end
-  def test_control_s47; assert_in_delta(1.0, worksheet.control_s47, 0.002); end
-  def test_control_t47; assert_in_delta(1.0, worksheet.control_t47, 0.002); end
-  def test_control_u47; assert_in_delta(1.0, worksheet.control_u47, 0.002); end
+  def test_control_p47; assert_in_epsilon(4.0, worksheet.control_p47, 0.002); end
+  def test_control_q47; assert_in_epsilon(3.0, worksheet.control_q47, 0.002); end
+  def test_control_r47; assert_in_epsilon(4.0, worksheet.control_r47, 0.002); end
+  def test_control_s47; assert_in_epsilon(4.0, worksheet.control_s47, 0.002); end
+  def test_control_t47; assert_in_epsilon(4.0, worksheet.control_t47, 0.002); end
+  def test_control_u47; assert_in_epsilon(4.0, worksheet.control_u47, 0.002); end
   def test_control_n49; assert_in_delta(1.0, worksheet.control_n49, 0.002); end
   def test_control_o49; assert_in_delta(1.0, worksheet.control_o49, 0.002); end
-  def test_control_p49; assert_in_delta(1.0, worksheet.control_p49, 0.002); end
-  def test_control_q49; assert_in_delta(1.0, worksheet.control_q49, 0.002); end
-  def test_control_r49; assert_in_delta(1.0, worksheet.control_r49, 0.002); end
-  def test_control_s49; assert_in_delta(1.0, worksheet.control_s49, 0.002); end
-  def test_control_t49; assert_in_delta(1.0, worksheet.control_t49, 0.002); end
-  def test_control_u49; assert_in_delta(1.0, worksheet.control_u49, 0.002); end
+  def test_control_p49; assert_in_epsilon(4.0, worksheet.control_p49, 0.002); end
+  def test_control_q49; assert_in_epsilon(3.0, worksheet.control_q49, 0.002); end
+  def test_control_r49; assert_in_epsilon(4.0, worksheet.control_r49, 0.002); end
+  def test_control_s49; assert_in_epsilon(4.0, worksheet.control_s49, 0.002); end
+  def test_control_t49; assert_in_epsilon(4.0, worksheet.control_t49, 0.002); end
+  def test_control_u49; assert_in_epsilon(4.0, worksheet.control_u49, 0.002); end
   def test_control_n50; assert_in_delta(1.0, worksheet.control_n50, 0.002); end
   def test_control_o50; assert_in_delta(1.0, worksheet.control_o50, 0.002); end
-  def test_control_p50; assert_in_delta(1.0, worksheet.control_p50, 0.002); end
-  def test_control_q50; assert_in_delta(1.0, worksheet.control_q50, 0.002); end
-  def test_control_r50; assert_in_delta(1.0, worksheet.control_r50, 0.002); end
-  def test_control_s50; assert_in_delta(1.0, worksheet.control_s50, 0.002); end
-  def test_control_t50; assert_in_delta(1.0, worksheet.control_t50, 0.002); end
-  def test_control_u50; assert_in_delta(1.0, worksheet.control_u50, 0.002); end
+  def test_control_p50; assert_in_epsilon(4.0, worksheet.control_p50, 0.002); end
+  def test_control_q50; assert_in_epsilon(3.0, worksheet.control_q50, 0.002); end
+  def test_control_r50; assert_in_epsilon(4.0, worksheet.control_r50, 0.002); end
+  def test_control_s50; assert_in_epsilon(4.0, worksheet.control_s50, 0.002); end
+  def test_control_t50; assert_in_epsilon(4.0, worksheet.control_t50, 0.002); end
+  def test_control_u50; assert_in_epsilon(4.0, worksheet.control_u50, 0.002); end
   def test_control_n52; assert_in_delta(1.0, worksheet.control_n52, 0.002); end
   def test_control_o52; assert_in_delta(1.0, worksheet.control_o52, 0.002); end
-  def test_control_p52; assert_in_delta(1.0, worksheet.control_p52, 0.002); end
-  def test_control_q52; assert_in_delta(1.0, worksheet.control_q52, 0.002); end
-  def test_control_r52; assert_in_delta(1.0, worksheet.control_r52, 0.002); end
-  def test_control_s52; assert_in_delta(1.0, worksheet.control_s52, 0.002); end
-  def test_control_t52; assert_in_delta(1.0, worksheet.control_t52, 0.002); end
-  def test_control_u52; assert_in_delta(1.0, worksheet.control_u52, 0.002); end
+  def test_control_p52; assert_in_epsilon(4.0, worksheet.control_p52, 0.002); end
+  def test_control_q52; assert_in_epsilon(3.0, worksheet.control_q52, 0.002); end
+  def test_control_r52; assert_in_epsilon(4.0, worksheet.control_r52, 0.002); end
+  def test_control_s52; assert_in_epsilon(4.0, worksheet.control_s52, 0.002); end
+  def test_control_t52; assert_in_epsilon(4.0, worksheet.control_t52, 0.002); end
+  def test_control_u52; assert_in_epsilon(4.0, worksheet.control_u52, 0.002); end
   def test_control_n53; assert_in_delta(1.0, worksheet.control_n53, 0.002); end
   def test_control_o53; assert_in_delta(1.0, worksheet.control_o53, 0.002); end
-  def test_control_p53; assert_in_delta(1.0, worksheet.control_p53, 0.002); end
-  def test_control_q53; assert_in_delta(1.0, worksheet.control_q53, 0.002); end
-  def test_control_r53; assert_in_delta(1.0, worksheet.control_r53, 0.002); end
-  def test_control_s53; assert_in_delta(1.0, worksheet.control_s53, 0.002); end
-  def test_control_t53; assert_in_delta(1.0, worksheet.control_t53, 0.002); end
-  def test_control_u53; assert_in_delta(1.0, worksheet.control_u53, 0.002); end
+  def test_control_p53; assert_in_epsilon(4.0, worksheet.control_p53, 0.002); end
+  def test_control_q53; assert_in_epsilon(3.0, worksheet.control_q53, 0.002); end
+  def test_control_r53; assert_in_epsilon(4.0, worksheet.control_r53, 0.002); end
+  def test_control_s53; assert_in_epsilon(4.0, worksheet.control_s53, 0.002); end
+  def test_control_t53; assert_in_epsilon(4.0, worksheet.control_t53, 0.002); end
+  def test_control_u53; assert_in_epsilon(4.0, worksheet.control_u53, 0.002); end
   def test_control_n54; assert_in_delta(1.0, worksheet.control_n54, 0.002); end
   def test_control_o54; assert_in_delta(1.0, worksheet.control_o54, 0.002); end
-  def test_control_p54; assert_in_delta(1.0, worksheet.control_p54, 0.002); end
-  def test_control_q54; assert_in_delta(1.0, worksheet.control_q54, 0.002); end
+  def test_control_p54; assert_in_epsilon(4.0, worksheet.control_p54, 0.002); end
+  def test_control_q54; assert_in_epsilon(3.0, worksheet.control_q54, 0.002); end
   def test_control_r54; assert_in_delta(1.0, worksheet.control_r54, 0.002); end
   def test_control_s54; assert_in_delta(1.0, worksheet.control_s54, 0.002); end
-  def test_control_t54; assert_in_delta(1.0, worksheet.control_t54, 0.002); end
-  def test_control_u54; assert_in_delta(1.0, worksheet.control_u54, 0.002); end
+  def test_control_t54; assert_in_epsilon(4.0, worksheet.control_t54, 0.002); end
+  def test_control_u54; assert_in_epsilon(4.0, worksheet.control_u54, 0.002); end
   def test_control_n55; assert_in_delta(1.0, worksheet.control_n55, 0.002); end
   def test_control_o55; assert_in_delta(1.0, worksheet.control_o55, 0.002); end
-  def test_control_p55; assert_in_delta(1.0, worksheet.control_p55, 0.002); end
-  def test_control_q55; assert_in_delta(1.0, worksheet.control_q55, 0.002); end
-  def test_control_r55; assert_in_delta(1.0, worksheet.control_r55, 0.002); end
-  def test_control_s55; assert_in_delta(1.0, worksheet.control_s55, 0.002); end
-  def test_control_t55; assert_in_delta(1.0, worksheet.control_t55, 0.002); end
-  def test_control_u55; assert_in_delta(1.0, worksheet.control_u55, 0.002); end
+  def test_control_p55; assert_in_epsilon(4.0, worksheet.control_p55, 0.002); end
+  def test_control_q55; assert_in_epsilon(3.0, worksheet.control_q55, 0.002); end
+  def test_control_r55; assert_in_epsilon(4.0, worksheet.control_r55, 0.002); end
+  def test_control_s55; assert_in_epsilon(4.0, worksheet.control_s55, 0.002); end
+  def test_control_t55; assert_in_epsilon(4.0, worksheet.control_t55, 0.002); end
+  def test_control_u55; assert_in_epsilon(4.0, worksheet.control_u55, 0.002); end
   def test_control_n56; assert_in_delta(1.0, worksheet.control_n56, 0.002); end
   def test_control_o56; assert_in_delta(1.0, worksheet.control_o56, 0.002); end
-  def test_control_p56; assert_in_delta(1.0, worksheet.control_p56, 0.002); end
-  def test_control_q56; assert_in_delta(1.0, worksheet.control_q56, 0.002); end
-  def test_control_r56; assert_in_delta(1.0, worksheet.control_r56, 0.002); end
-  def test_control_s56; assert_in_delta(1.0, worksheet.control_s56, 0.002); end
-  def test_control_t56; assert_in_delta(1.0, worksheet.control_t56, 0.002); end
-  def test_control_u56; assert_in_delta(1.0, worksheet.control_u56, 0.002); end
+  def test_control_p56; assert_in_epsilon(4.0, worksheet.control_p56, 0.002); end
+  def test_control_q56; assert_in_epsilon(3.0, worksheet.control_q56, 0.002); end
+  def test_control_r56; assert_in_epsilon(4.0, worksheet.control_r56, 0.002); end
+  def test_control_s56; assert_in_epsilon(4.0, worksheet.control_s56, 0.002); end
+  def test_control_t56; assert_in_epsilon(4.0, worksheet.control_t56, 0.002); end
+  def test_control_u56; assert_in_epsilon(4.0, worksheet.control_u56, 0.002); end
   def test_control_n59; assert_in_delta(1.0, worksheet.control_n59, 0.002); end
   def test_control_o59; assert_in_delta(1.0, worksheet.control_o59, 0.002); end
   def test_control_p59; assert_in_delta(1.0, worksheet.control_p59, 0.002); end
   def test_control_q59; assert_in_delta(1.0, worksheet.control_q59, 0.002); end
-  def test_control_r59; assert_in_delta(1.0, worksheet.control_r59, 0.002); end
-  def test_control_s59; assert_in_delta(1.0, worksheet.control_s59, 0.002); end
-  def test_control_t59; assert_in_delta(1.0, worksheet.control_t59, 0.002); end
-  def test_control_u59; assert_in_delta(1.0, worksheet.control_u59, 0.002); end
+  def test_control_r59; assert_in_epsilon(4.0, worksheet.control_r59, 0.002); end
+  def test_control_s59; assert_in_epsilon(4.0, worksheet.control_s59, 0.002); end
+  def test_control_t59; assert_in_epsilon(4.0, worksheet.control_t59, 0.002); end
+  def test_control_u59; assert_in_epsilon(4.0, worksheet.control_u59, 0.002); end
   def test_control_n60; assert_in_delta(1.0, worksheet.control_n60, 0.002); end
   def test_control_o60; assert_in_delta(1.0, worksheet.control_o60, 0.002); end
   def test_control_p60; assert_in_delta(1.0, worksheet.control_p60, 0.002); end
   def test_control_q60; assert_in_delta(1.0, worksheet.control_q60, 0.002); end
-  def test_control_r60; assert_in_delta(1.0, worksheet.control_r60, 0.002); end
-  def test_control_s60; assert_in_delta(1.0, worksheet.control_s60, 0.002); end
-  def test_control_t60; assert_in_delta(1.0, worksheet.control_t60, 0.002); end
-  def test_control_u60; assert_in_delta(1.0, worksheet.control_u60, 0.002); end
+  def test_control_r60; assert_in_epsilon(4.0, worksheet.control_r60, 0.002); end
+  def test_control_s60; assert_in_epsilon(4.0, worksheet.control_s60, 0.002); end
+  def test_control_t60; assert_in_epsilon(4.0, worksheet.control_t60, 0.002); end
+  def test_control_u60; assert_in_epsilon(4.0, worksheet.control_u60, 0.002); end
   def test_control_n61; assert_in_delta(1.0, worksheet.control_n61, 0.002); end
   def test_control_o61; assert_in_delta(1.0, worksheet.control_o61, 0.002); end
   def test_control_p61; assert_in_delta(1.0, worksheet.control_p61, 0.002); end
   def test_control_q61; assert_in_delta(1.0, worksheet.control_q61, 0.002); end
-  def test_control_r61; assert_in_delta(1.0, worksheet.control_r61, 0.002); end
-  def test_control_s61; assert_in_delta(1.0, worksheet.control_s61, 0.002); end
-  def test_control_t61; assert_in_delta(1.0, worksheet.control_t61, 0.002); end
-  def test_control_u61; assert_in_delta(1.0, worksheet.control_u61, 0.002); end
+  def test_control_r61; assert_in_epsilon(4.0, worksheet.control_r61, 0.002); end
+  def test_control_s61; assert_in_epsilon(4.0, worksheet.control_s61, 0.002); end
+  def test_control_t61; assert_in_epsilon(4.0, worksheet.control_t61, 0.002); end
+  def test_control_u61; assert_in_epsilon(4.0, worksheet.control_u61, 0.002); end
   def test_control_n62; assert_in_delta(1.0, worksheet.control_n62, 0.002); end
   def test_control_o62; assert_in_delta(1.0, worksheet.control_o62, 0.002); end
   def test_control_p62; assert_in_delta(1.0, worksheet.control_p62, 0.002); end
   def test_control_q62; assert_in_delta(1.0, worksheet.control_q62, 0.002); end
-  def test_control_r62; assert_in_delta(1.0, worksheet.control_r62, 0.002); end
-  def test_control_s62; assert_in_delta(1.0, worksheet.control_s62, 0.002); end
-  def test_control_t62; assert_in_delta(1.0, worksheet.control_t62, 0.002); end
-  def test_control_u62; assert_in_delta(1.0, worksheet.control_u62, 0.002); end
+  def test_control_r62; assert_in_epsilon(4.0, worksheet.control_r62, 0.002); end
+  def test_control_s62; assert_in_epsilon(4.0, worksheet.control_s62, 0.002); end
+  def test_control_t62; assert_in_epsilon(4.0, worksheet.control_t62, 0.002); end
+  def test_control_u62; assert_in_epsilon(4.0, worksheet.control_u62, 0.002); end
   def test_control_n63; assert_in_delta(1.0, worksheet.control_n63, 0.002); end
   def test_control_o63; assert_in_delta(1.0, worksheet.control_o63, 0.002); end
   def test_control_p63; assert_in_delta(1.0, worksheet.control_p63, 0.002); end
   def test_control_q63; assert_in_delta(1.0, worksheet.control_q63, 0.002); end
-  def test_control_r63; assert_in_delta(1.0, worksheet.control_r63, 0.002); end
-  def test_control_s63; assert_in_delta(1.0, worksheet.control_s63, 0.002); end
-  def test_control_t63; assert_in_delta(1.0, worksheet.control_t63, 0.002); end
-  def test_control_u63; assert_in_delta(1.0, worksheet.control_u63, 0.002); end
+  def test_control_r63; assert_in_epsilon(4.0, worksheet.control_r63, 0.002); end
+  def test_control_s63; assert_in_epsilon(4.0, worksheet.control_s63, 0.002); end
+  def test_control_t63; assert_in_epsilon(4.0, worksheet.control_t63, 0.002); end
+  def test_control_u63; assert_in_epsilon(4.0, worksheet.control_u63, 0.002); end
   def test_control_n65; assert_in_delta(1.0, worksheet.control_n65, 0.002); end
   def test_control_o65; assert_in_delta(1.0, worksheet.control_o65, 0.002); end
   def test_control_p65; assert_in_delta(1.0, worksheet.control_p65, 0.002); end
   def test_control_q65; assert_in_delta(1.0, worksheet.control_q65, 0.002); end
   def test_control_r65; assert_in_delta(1.0, worksheet.control_r65, 0.002); end
   def test_control_s65; assert_in_delta(1.0, worksheet.control_s65, 0.002); end
-  def test_control_t65; assert_in_delta(1.0, worksheet.control_t65, 0.002); end
-  def test_control_u65; assert_in_delta(1.0, worksheet.control_u65, 0.002); end
-  def test_control_n70; assert_in_delta(1.0, worksheet.control_n70, 0.002); end
-  def test_control_o70; assert_in_delta(1.0, worksheet.control_o70, 0.002); end
-  def test_control_p70; assert_in_delta(1.0, worksheet.control_p70, 0.002); end
-  def test_control_q70; assert_in_delta(1.0, worksheet.control_q70, 0.002); end
-  def test_control_r70; assert_in_delta(1.0, worksheet.control_r70, 0.002); end
-  def test_control_s70; assert_in_delta(1.0, worksheet.control_s70, 0.002); end
-  def test_control_t70; assert_in_delta(1.0, worksheet.control_t70, 0.002); end
-  def test_control_u70; assert_in_delta(1.0, worksheet.control_u70, 0.002); end
+  def test_control_t65; assert_in_epsilon(4.0, worksheet.control_t65, 0.002); end
+  def test_control_u65; assert_in_epsilon(4.0, worksheet.control_u65, 0.002); end
   def test_control_n71; assert_in_delta(1.0, worksheet.control_n71, 0.002); end
-  def test_control_o71; assert_in_delta(1.0, worksheet.control_o71, 0.002); end
+  def test_control_o71; assert_in_epsilon(4.0, worksheet.control_o71, 0.002); end
   def test_control_p71; assert_in_delta(1.0, worksheet.control_p71, 0.002); end
   def test_control_q71; assert_in_delta(1.0, worksheet.control_q71, 0.002); end
-  def test_control_r71; assert_in_delta(1.0, worksheet.control_r71, 0.002); end
-  def test_control_s71; assert_in_delta(1.0, worksheet.control_s71, 0.002); end
-  def test_control_t71; assert_in_delta(1.0, worksheet.control_t71, 0.002); end
-  def test_control_u71; assert_in_delta(1.0, worksheet.control_u71, 0.002); end
+  def test_control_r71; assert_in_epsilon(4.0, worksheet.control_r71, 0.002); end
+  def test_control_s71; assert_in_epsilon(4.0, worksheet.control_s71, 0.002); end
+  def test_control_t71; assert_in_epsilon(4.0, worksheet.control_t71, 0.002); end
+  def test_control_u71; assert_in_epsilon(4.0, worksheet.control_u71, 0.002); end
   def test_control_n72; assert_equal("No se toman acciones para enfrentar el cambio climático. Todo en nivel 1.", worksheet.control_n72); end
   def test_control_o72; assert_equal("Se realiza un gran esfuerzo para cambiar la matriz energética y hacerla baja en carbono.", worksheet.control_o72); end
   def test_control_p72; assert_equal("Se realiza un gran esfuerzo para reducir la demanda energética y tomar medidas de eficiencia.", worksheet.control_p72); end
