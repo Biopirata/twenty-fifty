@@ -7845,6 +7845,7 @@ class Model
     # end of Conversions
     # end of Global assumptions
     # end of Constants
+    # end of Trayectorias
     # end of I.a
     # end of I.b
     # end of II.a
@@ -7855,8 +7856,8 @@ class Model
     # end of III.e
     # end of IV.a
     # end of IV.b
-    # end of V.b
     # end of V.a
+    # end of V.b
     # end of VI.a
     # end of VI.b
     # end of VI.c
