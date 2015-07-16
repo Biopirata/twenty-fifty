@@ -6758,9 +6758,17 @@ class Model
     attach_function 'land_k22', [], ExcelValue.by_value
     attach_function 'land_l22', [], ExcelValue.by_value
     attach_function 'land_m22', [], ExcelValue.by_value
-    attach_function 'land_d27', [], ExcelValue.by_value
-    attach_function 'land_e27', [], ExcelValue.by_value
-    attach_function 'land_f27', [], ExcelValue.by_value
+    attach_function 'land_c23', [], ExcelValue.by_value
+    attach_function 'land_d23', [], ExcelValue.by_value
+    attach_function 'land_e23', [], ExcelValue.by_value
+    attach_function 'land_f23', [], ExcelValue.by_value
+    attach_function 'land_g23', [], ExcelValue.by_value
+    attach_function 'land_h23', [], ExcelValue.by_value
+    attach_function 'land_i23', [], ExcelValue.by_value
+    attach_function 'land_j23', [], ExcelValue.by_value
+    attach_function 'land_k23', [], ExcelValue.by_value
+    attach_function 'land_l23', [], ExcelValue.by_value
+    attach_function 'land_m23', [], ExcelValue.by_value
     attach_function 'land_d28', [], ExcelValue.by_value
     attach_function 'land_e28', [], ExcelValue.by_value
     attach_function 'land_f28', [], ExcelValue.by_value
@@ -6803,6 +6811,9 @@ class Model
     attach_function 'land_d41', [], ExcelValue.by_value
     attach_function 'land_e41', [], ExcelValue.by_value
     attach_function 'land_f41', [], ExcelValue.by_value
+    attach_function 'land_d42', [], ExcelValue.by_value
+    attach_function 'land_e42', [], ExcelValue.by_value
+    attach_function 'land_f42', [], ExcelValue.by_value
     # end of Land
     attach_function 'flows_c5', [], ExcelValue.by_value
     attach_function 'flows_d5', [], ExcelValue.by_value

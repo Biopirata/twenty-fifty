@@ -30,9 +30,9 @@
       Code in the checkSVGWorks function in src/javascripts/controller.js checks if the user's web browser 
       supports SVG and, if it doesn't, shows this div.  -->
     <div id='svgWarn'>
-      This interface requires <a href='http://caniuse.com/#cats=SVG'>a browser that supports SVG.</a> it seems like your browser doesn't support SVG. We have an <a href='http://uk-old.2050.org.uk'>old version of this calculator</a> that may work for you. Alternatively you can download <a href='http://2050-calculator-tool-wiki.decc.gov.uk/pages/140'>an excel version.</a>
+      Este interfase requiere <a href='http://caniuse.com/#cats=SVG'> un navegador que soporte SVG.</a> parece que tu navegador no soporta SVG. </a>
       <p>
-        <a href='#' onclick="$('#svgWarn').hide()">Hide this message.</a>
+        <a href='#' onclick="$('#svgWarn').hide()">Ocultar este mensaje.</a>
       </p>
     </div>
 
@@ -40,7 +40,7 @@
 
       <div id='name'>
         <!-- Change this to link to your country website -->
-        <a href='http://www.sener.gob.mx/'>Calculadora M&eacute;xico 2050</a>
+        <a href='http://www.calculadoramexico2050.org/'>Calculadora M&eacute;xico 2050</a>
       </div>
 
       <div id='examples'>
@@ -56,19 +56,19 @@
         <a class='view' data-view='sankey' href='#'>Flujos</a>
         <a class='view' data-view='map' href='#'>Mapa</a>
         <a class='view' data-view='story' href='#'>Historia</a>
-        <a class='newdropdown' data-dropdown='#cost_choices' href='#' id='cost_choice'>Costos</a>
-        <a class='view' data-view='air_quality' href='#'>Aire</a>
-        <a class='view' data-view='share' href='#'>Compartir</a>
+        <!-- <a class='newdropdown' data-dropdown='#cost_choices' href='#' id='cost_choice'>Costos</a>
+        <a class='view' data-view='air_quality' href='#'>Aire</a> 
+        <a class='view' data-view='share' href='#'>Compartir</a> -->
         <!-- Change this to link to your own country website documentation -->
-        <a href='http://2050-calculator-tool-wiki.decc.gov.uk'>Documentaci&oacute;n</a>
+        <!-- <a href='http://www.calculadoramexico2050.org'>Documentaci&oacute;n</a> -->
       </div>
     </div>
 
-    <div class='dropdown' id='cost_choices'>
+    <!-- <div class='dropdown' id='cost_choices'>
       <a class='view' data-view='costs_in_context' href='#'>En contexto</a>
       <a class='view' data-view='costs_compared_overview' href='#'>Comparado</a>
       <a class='view' data-view='costs_sensitivity' href='#'>Sensibilidad</a>
-    </div>
+    </div> -->
 
     <div class='dropdown' id='savedpathway_choices'>
       <!-- These are taken from the underlying spreadsheet -->
@@ -76,7 +76,7 @@
         <a href='#' onclick="twentyfifty.switchPathway('<%= pathway[:code] %>');$('ul#savedpathway_choices').toggle()"><%= pathway[:name] %></a>
       <% end %>
       <!-- Change this to point to your local website -->
-      <a href='http://2050-calculator-tool-wiki.decc.gov.uk/pages/122'>More&hellip;</a>
+      <a href='http://www.calculadoramexico2050.org'>More&hellip;</a>
     </div>
     <!-- This appears while the tool is waiting for data from the server -->
     <div id='calculating'>
@@ -405,7 +405,7 @@
         
        
         
-        <h4>Notes</h4>
+        <h4>Notas</h4>
         <table id='notes'>
           <tr><td id='firstcell'><div class='help'>?</div></td><td>Signo de interrogaci&oacute;n te lleva a las descripciones de una p&aacute;gina de cada elecci&oacute;n</td></tr>
           <tr><td><div class='level1'>1</div></td><td>Elecci&oacute;n que refleja el menor esfuerzo posible.</td></tr>
@@ -423,7 +423,7 @@
     <div id='tooltip'></div>
     <div id='footer'>
       <!-- Change this to link to your country's website -->
-      Todos los supuestos y c&aacute;lculos est&aacute;n disponibles en una hoja de c&aacute;lculo. Descarga <a href='/model.xlsx'>Excel <%= structure.reported_calculator_version %> <%= %></a> (<a href='http://2050-calculator-tool-wiki.decc.gov.uk/pages/140'>Version history</a>). El c&oacute;digo fuente para este sitio tambi&eacute;n est&aacute; disponible bajo una licencia de c&oacute;digo libre en <a href='http://github.com/Biopirata/mexico-twenty-fifty'>https://github.com/Biopirata/mexico-twenty-fifty</a>
+      Todos los supuestos y c&aacute;lculos est&aacute;n disponibles en una hoja de c&aacute;lculo. Descarga <a href='/model.xlsx'>Excel <%= structure.reported_calculator_version %> <%= %></a>. El c&oacute;digo fuente para este sitio tambi&eacute;n est&aacute; disponible bajo una licencia de c&oacute;digo libre en <a href='http://github.com/Biopirata/mexico-twenty-fifty'>https://github.com/Biopirata/mexico-twenty-fifty</a>
     </div>
     <!-- The following html is only displayed on screen when a user selects a particular view -->
     <div id='snippets'>
@@ -469,7 +469,7 @@
             <h2>Balanceo de la demanda y oferta de electricidad</h2>
             <p id='autobuild_text'> Se asume que se construyen <span id='pathway_balancing_ccgt'></span> GW de capacidad de generaci&oacute;n a base de gas para cubrir la brecha entre la demanda promedio de energ&iacute;a y la cantidad de generaci&oacute;n baja en carbono seleccionada en el escenario.</p>
             <p>Esta heramienta no modela la operaci&oacute;n horaria, diaria o incluso estacional de la red. Presenta s&oacute;lo promedios anuales. Por tanto, no representa de manera correcta los picos y valles de demanda energ&eacute;tica.</p>
-            <p>Para atender esta limitaci&oacute;n, la herramienta aplica una prueba simulada de estr&eacute;s considerando un pico de calor en un contexto de poco viento. Esto se describe con mayor detall en [en construcci&oacute;n] <a href="/assets/onepage/49.pdf" target="_new">here</a>. En este caso, la prueba de stress implica que podr&iacute;an requerirse <span id='pathway_balancing_peaking'></span> GW de capacidad para cubrir los picos de demanda.</p>
+            <p>Para atender esta limitaci&oacute;n, la herramienta aplica una prueba simulada de estr&eacute;s considerando un pico de calor en un contexto de poco viento. Esto se describe con mayor detalle <a href="/assets/onepage/42.pdf" target="_new">aqu&iacute;</a>. En este caso, la prueba de estr&eacute;s implica que podr&iacute;an requerirse <span id='pathway_balancing_peaking'></span> GW de capacidad para cubrir los picos de demanda.</p>
             <p>Puedes influenciar la capacidad requerida para demanda pico cambiando el nivel de "almacenamiento, desplazamiento de demanda e intercomecci&oacute;n", reduciendo la cantidad de generaci&oacute;n renovable intermitente, o reduciendo la demanda de electricidad</p>
           </div>
           <div id="imports" class="column">
@@ -477,12 +477,12 @@
             <p>La calculadora supone que cualquier biomasa disponible es preferida sobre los combustibles f&oacute;siles y que los combustibles producidos dom&eacute;sticamente son mejores que los importados. Supone que se importan combustibles f&oacute;siles para cubrir demanda no satisfecha.</p>
             <table id="imports">
               <tr><th class="description"></th><th colspan="2" class="year">2010</th><th></th><th colspan="2" class="year">2050</th></tr>
-              <tr><th class="description">Imports</th><th class="value">TWh/yr</th><th class="value">%</th><th></th><th class="value">TWh/yr</th><th class="value">%</th></tr>
+              <tr><th class="description">Importaci&oacute;n</th><th class="value">TWh/yr</th><th class="value">%</th><th></th><th class="value">TWh/yr</th><th class="value">%</th></tr>
             </table>
           </div>
           <div id="diversity" class="column">
             <h2>Diversidad de fuentes de energ&iacute;a</h2>
-            <p>Puede haber un beneficio de mantener una diversidad de fuentes de energ&iacute;a:</p>
+            <p>Puede haber ventajas de mantener una diversidad de fuentes de energ&iacute;a:</p>
             <table id="diversity">
               <tbody>
               <tr><th class="description">Proporci&oacute;n de la oferta energ&eacute;tica</th><th class="year">2010</th><th></th><th class="year">2050</th></tr>

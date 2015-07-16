@@ -56,7 +56,7 @@ window.twentyfifty.views.map = function() {
     };
   };
 
-  // All the settings
+  // All the settings for map
   displayin_element = 'map';
   display_width = 1200;
   display_height = 800;
@@ -77,11 +77,11 @@ window.twentyfifty.views.map = function() {
   colours = {
     'III.a.2': '#ff0000',
     'III.a.1': '#ff0000',
-    'IV.c': '#aa0000',
     'VI.a.Biocrop': '#00ff00',
     'VI.a.Forestry': '#408000',
     'VI.c': '#00ff00',
     'V.b': '#00ff00',
+    'III.e': '#ffff00',
     'IV.a': '#ffff00',
     'IV.b': '#cccc00',
     'VII.a': '#ffff00',
@@ -99,17 +99,16 @@ window.twentyfifty.views.map = function() {
   labels = {
     'III.a.2': 'Eólica de costa',
     'III.a.1': 'Eólica en tierra',
-    'IV.c': 'Micro eólica',
     'VI.a.Biocrop': 'Bioenergéticos',
     'VI.a.Forestry': 'Bosques',
     'VI.c': 'Algas marinas',
     'V.b': 'Bioenergéticos',
+    'III.e': 'Solar fotovoltáica y concentración',
     'IV.a': 'Solar fotovoltáica (distribuida)',
     'IV.b': 'Solar térmica',
-    'VII.a': 'Solar fotovoltáica',
+    'VII.a': 'Solar fotovoltáica importada',
     'III.b': 'Hidroeléctricas',
-    'III.c.TidalRange': 'Tidal range',
-    'III.c.TidalStream': 'Tidal stream',
+    'III.c.TidalStream': 'Maremotriz - corrientes',
     'I.a': 'plantas de 2 GW a carbón/biomasa sin CCS',
     'I.b': 'plantas de 1.2 GW carbón/gas/biomasa con CCS',
     'II.a': 'plantas nucleares de 3 GW',
@@ -152,7 +151,7 @@ window.twentyfifty.views.map = function() {
     x = (map_width / 2) + map_offset_x;
     y = map_height + map_offset_y - 100;
     this.land_boxes = {};
-    land_box_names = ['III.b', 'IV.a', 'IV.b', 'IV.c', 'VI.a.Biocrop', 'VI.a.Forestry'];
+    land_box_names = ['III.b', 'III.e', 'IV.a', 'IV.b', 'VI.a.Biocrop', 'VI.a.Forestry'];
     for (i = 0, len = land_box_names.length; i < len; i++) {
       name = land_box_names[i];
       this.land_boxes[name] = r.upiabeled_square(x, y, labels[name], 0, colours[name]);

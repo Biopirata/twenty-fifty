@@ -26,8 +26,8 @@ window.twentyfifty.views.primary_energy_chart = function() {
     this.emissions_chart = timeSeriesStackedAreaChart()
       .title("Emisiones de Gases de Efecto Invernadero")
       .unit('MtCO2e/año')
-      .min_value(-500)
-      .max_value(1500);
+      .min_value(-200)
+      .max_value(1600);
   };
 
   // This is called when a new view has been selected

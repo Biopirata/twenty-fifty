@@ -14,13 +14,13 @@ window.twentyfifty.views.story = function() {
 
     element = $('#demand_story');
     element.empty();
-    this.stories_for_choices(element, "Homes in 2050", 32, 33, 37, 38);
+    this.stories_for_choices(element, "Hogares en 2050", 32, 33, 37, 38);
     this.heating_choice_table(element, this.pathway.heating, "Residential");
-    this.stories_for_choices(element, "Personal transport in 2050", 25, 26, 27, 29);
-    this.stories_for_choices(element, "Businesses in 2050", 43, 47, 48);
+    this.stories_for_choices(element, "Transporte personal en 2050", 25, 26, 27, 29);
+    this.stories_for_choices(element, "Comercios en 2050", 43, 47, 48);
     this.heating_choice_table(element, this.pathway.heating, "Commercial");
-    this.stories_for_choices(element, "Industry in 2050", 40, 41);
-    this.stories_for_choices(element, "Commercial transport in 2050", 28, 29, 30);
+    this.stories_for_choices(element, "Industria en 2050", 40, 41);
+    this.stories_for_choices(element, "Transporte de carga en 2050", 28, 29, 30);
 
     element = $('#supply_story');
     element.empty();
