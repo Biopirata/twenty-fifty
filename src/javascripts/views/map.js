@@ -59,7 +59,7 @@ window.twentyfifty.views.map = function() {
   // All the settings for map
   displayin_element = 'map';
   display_width = 1200;
-  display_height = 800;
+  display_height = 600;
   mapimage_url = '/assets/images/mexico.png';
   map_width = 759;
   map_height = 586;
@@ -151,7 +151,7 @@ window.twentyfifty.views.map = function() {
     x = (map_width / 2) + map_offset_x;
     y = map_height + map_offset_y - 100;
     this.land_boxes = {};
-    land_box_names = ['III.b', 'III.e', 'IV.a', 'IV.b', 'VI.a.Biocrop', 'VI.a.Forestry'];
+    land_box_names = ['III.b', 'III.e', 'IV.a', 'IV.b', 'III.a.1', 'VI.a.Biocrop', 'VI.a.Forestry'];
     for (i = 0, len = land_box_names.length; i < len; i++) {
       name = land_box_names[i];
       this.land_boxes[name] = r.upiabeled_square(x, y, labels[name], 0, colours[name]);
@@ -161,7 +161,7 @@ window.twentyfifty.views.map = function() {
     x = (map_width / 2) + map_offset_x + 250;
     y = 30;
     this.sea_boxes = {};
-    sea_box_names = ['III.c.TidalStream','VI.c'];
+    sea_box_names = ['III.c.TidalStream','VI.c', 'III.a.2'];
     for (i = 0, len = sea_box_names.length; i < len; i++) {
       name = sea_box_names[i];
       this.sea_boxes[name] = r.downiabeled_square(x, y, labels[name], 0, colours[name]);
