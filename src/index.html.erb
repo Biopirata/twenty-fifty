@@ -323,7 +323,7 @@
 
         <table>
           <p><b>Agricultura, bioenerg&iacute;a y alimentaci&oacute;n</b></p>  
-          <% structure.choices[10..13,16].each do |choice| %>
+          <% structure.choices[10..13].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
