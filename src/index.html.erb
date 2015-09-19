@@ -93,8 +93,8 @@
 
         <table>
           <!-- One row per choice -->
-         <p><b>Desarrollo urbano y transporte</b></p> 
-          <% structure.choices[18..24].each do |choice| %>
+         <p><b>Ciudades y transporte</b></p> 
+          <% structure.choices[17..23].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -118,8 +118,8 @@
    
 		<table>
           <!-- One row per choice -->
-          <p><b>Vivienda</b></p> 
-          <% structure.choices[25..31].each do |choice| %>
+          <p><b>Hogares</b></p> 
+          <% structure.choices[24..28].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -145,7 +145,7 @@
         <table>
           <!-- One row per choice -->
 		  <p><b>Industria</b></p> 
-          <% structure.choices[32..34].each do |choice| %>
+          <% structure.choices[29..31].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -171,7 +171,7 @@
 		<table>
           <!-- One row per choice -->
 		  <p><b>Comercio, servicios y sector p&uacute;blico</b></p> 
-          <% structure.choices[35..36].each do |choice| %>
+          <% structure.choices[32..33].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -194,8 +194,8 @@
         </table>
 
         <table>
-          <p><b>Variables globales</b></p>  
-          <% structure.choices[44..45].each do |choice| %>
+          <p><b>Parametros globales</b></p>  
+          <% structure.choices[38..39].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -224,7 +224,7 @@
       <div id='supply'>
 
         <table>
-		  <p><b>Nuclear</b></p>         
+		  <p><b>Energ&iacute;a nuclear</b></p>         
           <% structure.choices[0..0].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
@@ -249,8 +249,8 @@
 
 
         <table>
-     	  <p><b>Generaci&oacute;n f&oacute;sil</b></p>  
-          <% structure.choices[1..3].each do |choice| %>
+     	  <p><b>Generaci&oacute;n eléctrica f&oacute;sil</b></p>  
+          <% structure.choices[1..2].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -273,8 +273,8 @@
         </table>
 
         <table>
-     	    <p><b>Renovables</b></p>  
-     	    <% structure.choices[4..8].each do |choice| %>
+     	    <p><b>Energ&iacute;a renovable</b></p>  
+     	    <% structure.choices[3..7].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -298,7 +298,7 @@
 
  		<table>
      	    <p><b>Renovables peque&ntilde;a escala</b></p>  
-     	    <% structure.choices[9..10].each do |choice| %>
+     	    <% structure.choices[8..9].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -322,8 +322,32 @@
 
 
         <table>
-          <p><b>Bioenerg&iacute;a y residuos</b></p>  
-          <% structure.choices[11..17].each do |choice| %>
+          <p><b>Agricultura, bioenerg&iacute;a y alimentaci&oacute;n</b></p>  
+          <% structure.choices[10..13,16].each do |choice| %>
+            <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
+              <td class='name'>
+                <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
+                  <%= choice.name %>
+                </a>
+              </td>
+              <td class='help'>
+                <a title='Haga "click" para informaci&oacute;n sobre el significado de las opciones <%= choice.levels.to_a.join(' ')%>.' href='/assets/onepage/<%= choice.doc %>' target='_new'>?</a>
+              </td>
+              <!-- One cell per level for that choice -->
+              <% choice.levels.each.with_index do |level,i| %>
+                <td class='choice'>
+                  <a href='#' data-choicenumber='<%= choice.number %>' data-choicelevel='<%= i+1 %>' id='c<%= choice.number %>l<%= i+1%>' title='<%= choice.descriptions[i] %>' class='choiceLink' >
+                    <%= level %>
+                </a>
+              </td>
+            <% end %>
+            </tr>
+          <% end %>
+         </table>  
+
+        <table>
+          <p><b>Residuos</b></p>  
+          <% structure.choices[14..15].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -348,7 +372,7 @@
 
 		    <table>
      	    <p><b>Producci&oacute;n f&oacute;sil</b></p>  
-     	    <% structure.choices[43..43].each do |choice| %>
+     	    <% structure.choices[37..37].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -379,7 +403,7 @@
         <table>
           <!-- this should actually go up to choice 42, but that isn't ready for prime time yet -->
           <p><b>Bosques</b></p> 
-          <% structure.choices[37..41].each do |choice| %>
+          <% structure.choices[34..35].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -403,7 +427,7 @@
         
         <table>
           <p><b>Almacenamiento y balance energ&eacute;tico</b></p> 
-          <% structure.choices[42..42].each do |choice| %>
+          <% structure.choices[36..36].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
