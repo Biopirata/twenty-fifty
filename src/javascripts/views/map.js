@@ -59,7 +59,7 @@ window.twentyfifty.views.map = function() {
   // All the settings for map
   displayin_element = 'map';
   display_width = 1200;
-  display_height = 600;
+  display_height = 800;
   mapimage_url = '/assets/images/mexico.png';
   map_width = 759;
   map_height = 586;
@@ -108,7 +108,7 @@ window.twentyfifty.views.map = function() {
     'IV.b': 'Solar térmica',
     'VII.a': 'Solar fotovoltáica importada',
     'III.b': 'Hidroeléctricas',
-    'III.c.TidalStream': 'Maremotriz - corrientes',
+    'III.c.TidalStream': 'Maremotriz',
     'I.a': 'plantas de 2 GW a carbón/biomasa sin CCS',
     'I.b': 'plantas de 1.2 GW carbón/gas/biomasa con CCS',
     'II.a': 'plantas nucleares de 3 GW',
