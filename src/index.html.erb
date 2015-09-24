@@ -323,7 +323,7 @@
 
         <table>
           <p><b>Agricultura, bioenerg&iacute;a y alimentaci&oacute;n</b></p>  
-          <% structure.choices[10..13].each do |choice| %>
+          <% structure.choices[10..14].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -347,7 +347,7 @@
 
         <table>
           <p><b>Residuos</b></p>  
-          <% structure.choices[14..15].each do |choice| %>
+          <% structure.choices[15..16].each do |choice| %>
             <tr class='<%= choice.incremental_or_alternative %>' id='r<%= choice.number %>'>
               <td class='name'>
                 <a href='/assets/onepage/<%= choice.doc %>' target='_new' data-choicenumber='<%= choice.number %>'>
@@ -452,14 +452,14 @@
         
         <h4>Notas</h4>
         <table id='notes'>
-          <tr><td id='firstcell'><div class='help'>?</div></td><td>Signo de interrogaci&oacute;n te lleva a las descripciones de una p&aacute;gina de cada elecci&oacute;n</td></tr>
+          <tr><td id='firstcell'><div class='help'>?</div></td><td>El signo de interrogaci&oacute;n te lleva a las descripciones de una p&aacute;gina de cada elecci&oacute;n</td></tr>
           <tr><td><div class='level1'>1</div></td><td>Elecci&oacute;n que refleja el menor esfuerzo posible.</td></tr>
           <tr><td><div class='level2'>2</div></td><td>Considerada ambiciosa pero razonable por la mayor&iacute;a de los expertos.</td></tr>
           <tr><td><div class='level3'>3</div></td><td>Considerada poco probable sin cambios significativos al sistema actual y/o en las tecnolog&iacute;as.</td></tr>
           <tr><td><div class='level4'>4</div></td><td>El l&iacute;mite superios de lo que se cree es f&iacute;sicamente posible por el observador m&aacute;s optimista.</td></tr>
           <tr><td><div class='alternate'>A</div>&ndash;<div class='alternate'>D</div></td><td>Un rango de opciones donde una alternativa no es necesariamente m&aacute;s dif&iacute;cil que otra</td></tr>
           <tr class='primary_energy_notes'><td>Total empleado en M&eacute;xico<sup>1</sup></td><td>La oferta de energ&iacute;a primaria es normalmente m&aacute;s alta que la demanda final, debido a la energ&iacute;a usada para generar electricidad.</td></tr>
-          <tr class='primary_energy_notes'><td>Metas<sup>2</sup></td><td>Las metas excluyen aviaci&oacute;n y transporte mar&iacute;timo internacional.</td></tr>
+          <tr class='primary_energy_notes'><td>Metas<sup>2</sup></td><td>Se refiere a las metas en la Ley General de Cambio Clim&aacute;tico. Excluyen aviaci&oacute;n y transporte mar&iacute;timo internacional.</td></tr>
           <tr class='primary_energy_notes'><td>Total<sup>3</sup></td><td>El total incluye la reducci&oacute;n en emisiones de captura y almacenamiento de carbono y del crecimiento de nueva biomasa para reemplazar la usada (cr&eacute;dito por bioenerg&iacute;a).</td></tr> 
       </table>
       </div>

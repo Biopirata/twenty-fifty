@@ -27,6 +27,7 @@ window.twentyfifty.views.electricity = function() {
       .max_value(1000);
   };
 
+
   // This is called when a new view has been selected
   // it removes the charts and tidies up.
   this.teardown = function() {
@@ -40,6 +41,7 @@ window.twentyfifty.views.electricity = function() {
   // or the user chooses a different pathway
   // it updates the charts
   this.updateResults = function(pathway) {
+
 
     // The last row of the final energy demand table is assumed to be the Total
     // FIXME: Make this more robust
@@ -69,7 +71,8 @@ window.twentyfifty.views.electricity = function() {
       .datum(convert_table_to_hash(pathway.electricity.ghg))
       .call(this.emissions_chart);
   };
-  
+
+
   // This is used to convert the table from how it looks in Excel
   // into the format needed to plot a chart
   convert_table_to_hash = function(table) {
@@ -83,6 +86,8 @@ window.twentyfifty.views.electricity = function() {
     });
     return hash;
   }
+
+
 
   return this;
 }.call({});

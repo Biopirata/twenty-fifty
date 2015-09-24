@@ -41,6 +41,7 @@ class DataFromModel
       'sankey' => excel.output_flows, # output.flows in the Excel
       'ghg' => excel.output_ghg_by_ipcc_sector, # output.ghg.by.ipcc.sector in Excel
       'ghg_reduction_from_2000' => excel.output_ghg_percentage_reduction, # output.ghg.percentage.reduction in Excel
+      'clean_generation_2050' => excel.output_nonfossil_percentage_generation, # output.nonfossil.percentage.generation in Excel
       'final_energy_demand' => excel.output_finalenergydemand, # output.finalenergydemand
       'primary_energy_supply' => excel.output_primaryenergysupply, # output.primaryenergysupply
       'electricity' => {
