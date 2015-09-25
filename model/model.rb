@@ -5474,36 +5474,6 @@ class Model
     attach_function 'ghg_m25', [], ExcelValue.by_value
     attach_function 'ghg_e43', [], ExcelValue.by_value
     # end of GHG
-    attach_function 'electricity_d61', [], ExcelValue.by_value
-    attach_function 'electricity_e61', [], ExcelValue.by_value
-    attach_function 'electricity_f61', [], ExcelValue.by_value
-    attach_function 'electricity_g61', [], ExcelValue.by_value
-    attach_function 'electricity_h61', [], ExcelValue.by_value
-    attach_function 'electricity_i61', [], ExcelValue.by_value
-    attach_function 'electricity_j61', [], ExcelValue.by_value
-    attach_function 'electricity_k61', [], ExcelValue.by_value
-    attach_function 'electricity_l61', [], ExcelValue.by_value
-    attach_function 'electricity_m61', [], ExcelValue.by_value
-    attach_function 'electricity_d62', [], ExcelValue.by_value
-    attach_function 'electricity_e62', [], ExcelValue.by_value
-    attach_function 'electricity_f62', [], ExcelValue.by_value
-    attach_function 'electricity_g62', [], ExcelValue.by_value
-    attach_function 'electricity_h62', [], ExcelValue.by_value
-    attach_function 'electricity_i62', [], ExcelValue.by_value
-    attach_function 'electricity_j62', [], ExcelValue.by_value
-    attach_function 'electricity_k62', [], ExcelValue.by_value
-    attach_function 'electricity_l62', [], ExcelValue.by_value
-    attach_function 'electricity_m62', [], ExcelValue.by_value
-    attach_function 'electricity_d63', [], ExcelValue.by_value
-    attach_function 'electricity_e63', [], ExcelValue.by_value
-    attach_function 'electricity_f63', [], ExcelValue.by_value
-    attach_function 'electricity_g63', [], ExcelValue.by_value
-    attach_function 'electricity_h63', [], ExcelValue.by_value
-    attach_function 'electricity_i63', [], ExcelValue.by_value
-    attach_function 'electricity_j63', [], ExcelValue.by_value
-    attach_function 'electricity_k63', [], ExcelValue.by_value
-    attach_function 'electricity_l63', [], ExcelValue.by_value
-    attach_function 'electricity_m63', [], ExcelValue.by_value
     attach_function 'electricity_d64', [], ExcelValue.by_value
     attach_function 'electricity_e64', [], ExcelValue.by_value
     attach_function 'electricity_f64', [], ExcelValue.by_value
@@ -5624,6 +5594,36 @@ class Model
     attach_function 'electricity_k75', [], ExcelValue.by_value
     attach_function 'electricity_l75', [], ExcelValue.by_value
     attach_function 'electricity_m75', [], ExcelValue.by_value
+    attach_function 'electricity_d76', [], ExcelValue.by_value
+    attach_function 'electricity_e76', [], ExcelValue.by_value
+    attach_function 'electricity_f76', [], ExcelValue.by_value
+    attach_function 'electricity_g76', [], ExcelValue.by_value
+    attach_function 'electricity_h76', [], ExcelValue.by_value
+    attach_function 'electricity_i76', [], ExcelValue.by_value
+    attach_function 'electricity_j76', [], ExcelValue.by_value
+    attach_function 'electricity_k76', [], ExcelValue.by_value
+    attach_function 'electricity_l76', [], ExcelValue.by_value
+    attach_function 'electricity_m76', [], ExcelValue.by_value
+    attach_function 'electricity_d77', [], ExcelValue.by_value
+    attach_function 'electricity_e77', [], ExcelValue.by_value
+    attach_function 'electricity_f77', [], ExcelValue.by_value
+    attach_function 'electricity_g77', [], ExcelValue.by_value
+    attach_function 'electricity_h77', [], ExcelValue.by_value
+    attach_function 'electricity_i77', [], ExcelValue.by_value
+    attach_function 'electricity_j77', [], ExcelValue.by_value
+    attach_function 'electricity_k77', [], ExcelValue.by_value
+    attach_function 'electricity_l77', [], ExcelValue.by_value
+    attach_function 'electricity_m77', [], ExcelValue.by_value
+    attach_function 'electricity_d78', [], ExcelValue.by_value
+    attach_function 'electricity_e78', [], ExcelValue.by_value
+    attach_function 'electricity_f78', [], ExcelValue.by_value
+    attach_function 'electricity_g78', [], ExcelValue.by_value
+    attach_function 'electricity_h78', [], ExcelValue.by_value
+    attach_function 'electricity_i78', [], ExcelValue.by_value
+    attach_function 'electricity_j78', [], ExcelValue.by_value
+    attach_function 'electricity_k78', [], ExcelValue.by_value
+    attach_function 'electricity_l78', [], ExcelValue.by_value
+    attach_function 'electricity_m78', [], ExcelValue.by_value
     attach_function 'electricity_d24', [], ExcelValue.by_value
     attach_function 'electricity_e24', [], ExcelValue.by_value
     attach_function 'electricity_f24', [], ExcelValue.by_value
@@ -5684,36 +5684,6 @@ class Model
     attach_function 'electricity_k29', [], ExcelValue.by_value
     attach_function 'electricity_l29', [], ExcelValue.by_value
     attach_function 'electricity_m29', [], ExcelValue.by_value
-    attach_function 'electricity_d109', [], ExcelValue.by_value
-    attach_function 'electricity_e109', [], ExcelValue.by_value
-    attach_function 'electricity_f109', [], ExcelValue.by_value
-    attach_function 'electricity_g109', [], ExcelValue.by_value
-    attach_function 'electricity_h109', [], ExcelValue.by_value
-    attach_function 'electricity_i109', [], ExcelValue.by_value
-    attach_function 'electricity_j109', [], ExcelValue.by_value
-    attach_function 'electricity_k109', [], ExcelValue.by_value
-    attach_function 'electricity_l109', [], ExcelValue.by_value
-    attach_function 'electricity_m109', [], ExcelValue.by_value
-    attach_function 'electricity_d110', [], ExcelValue.by_value
-    attach_function 'electricity_e110', [], ExcelValue.by_value
-    attach_function 'electricity_f110', [], ExcelValue.by_value
-    attach_function 'electricity_g110', [], ExcelValue.by_value
-    attach_function 'electricity_h110', [], ExcelValue.by_value
-    attach_function 'electricity_i110', [], ExcelValue.by_value
-    attach_function 'electricity_j110', [], ExcelValue.by_value
-    attach_function 'electricity_k110', [], ExcelValue.by_value
-    attach_function 'electricity_l110', [], ExcelValue.by_value
-    attach_function 'electricity_m110', [], ExcelValue.by_value
-    attach_function 'electricity_d111', [], ExcelValue.by_value
-    attach_function 'electricity_e111', [], ExcelValue.by_value
-    attach_function 'electricity_f111', [], ExcelValue.by_value
-    attach_function 'electricity_g111', [], ExcelValue.by_value
-    attach_function 'electricity_h111', [], ExcelValue.by_value
-    attach_function 'electricity_i111', [], ExcelValue.by_value
-    attach_function 'electricity_j111', [], ExcelValue.by_value
-    attach_function 'electricity_k111', [], ExcelValue.by_value
-    attach_function 'electricity_l111', [], ExcelValue.by_value
-    attach_function 'electricity_m111', [], ExcelValue.by_value
     attach_function 'electricity_d112', [], ExcelValue.by_value
     attach_function 'electricity_e112', [], ExcelValue.by_value
     attach_function 'electricity_f112', [], ExcelValue.by_value
@@ -5724,6 +5694,36 @@ class Model
     attach_function 'electricity_k112', [], ExcelValue.by_value
     attach_function 'electricity_l112', [], ExcelValue.by_value
     attach_function 'electricity_m112', [], ExcelValue.by_value
+    attach_function 'electricity_d113', [], ExcelValue.by_value
+    attach_function 'electricity_e113', [], ExcelValue.by_value
+    attach_function 'electricity_f113', [], ExcelValue.by_value
+    attach_function 'electricity_g113', [], ExcelValue.by_value
+    attach_function 'electricity_h113', [], ExcelValue.by_value
+    attach_function 'electricity_i113', [], ExcelValue.by_value
+    attach_function 'electricity_j113', [], ExcelValue.by_value
+    attach_function 'electricity_k113', [], ExcelValue.by_value
+    attach_function 'electricity_l113', [], ExcelValue.by_value
+    attach_function 'electricity_m113', [], ExcelValue.by_value
+    attach_function 'electricity_d114', [], ExcelValue.by_value
+    attach_function 'electricity_e114', [], ExcelValue.by_value
+    attach_function 'electricity_f114', [], ExcelValue.by_value
+    attach_function 'electricity_g114', [], ExcelValue.by_value
+    attach_function 'electricity_h114', [], ExcelValue.by_value
+    attach_function 'electricity_i114', [], ExcelValue.by_value
+    attach_function 'electricity_j114', [], ExcelValue.by_value
+    attach_function 'electricity_k114', [], ExcelValue.by_value
+    attach_function 'electricity_l114', [], ExcelValue.by_value
+    attach_function 'electricity_m114', [], ExcelValue.by_value
+    attach_function 'electricity_d115', [], ExcelValue.by_value
+    attach_function 'electricity_e115', [], ExcelValue.by_value
+    attach_function 'electricity_f115', [], ExcelValue.by_value
+    attach_function 'electricity_g115', [], ExcelValue.by_value
+    attach_function 'electricity_h115', [], ExcelValue.by_value
+    attach_function 'electricity_i115', [], ExcelValue.by_value
+    attach_function 'electricity_j115', [], ExcelValue.by_value
+    attach_function 'electricity_k115', [], ExcelValue.by_value
+    attach_function 'electricity_l115', [], ExcelValue.by_value
+    attach_function 'electricity_m115', [], ExcelValue.by_value
     attach_function 'electricity_d44', [], ExcelValue.by_value
     attach_function 'electricity_e44', [], ExcelValue.by_value
     attach_function 'electricity_f44', [], ExcelValue.by_value
@@ -5834,6 +5834,7 @@ class Model
     attach_function 'electricity_k54', [], ExcelValue.by_value
     attach_function 'electricity_l54', [], ExcelValue.by_value
     attach_function 'electricity_m54', [], ExcelValue.by_value
+    attach_function 'electricity_m56', [], ExcelValue.by_value
     # end of Electricity
     attach_function 'security_d144', [], ExcelValue.by_value
     attach_function 'security_e144', [], ExcelValue.by_value
@@ -7614,6 +7615,7 @@ class Model
     attach_function 'output_heating_mix', [], ExcelValue.by_value
     attach_function 'output_imports_proportion', [], ExcelValue.by_value
     attach_function 'output_imports_quantity', [], ExcelValue.by_value
+    attach_function 'output_nonfossil_percentage_generation', [], ExcelValue.by_value
     attach_function 'output_primaryenergysupply', [], ExcelValue.by_value
     attach_function 'output_shannonweinerindex', [], ExcelValue.by_value
     attach_function 'output_version', [], ExcelValue.by_value
@@ -7640,6 +7642,7 @@ class Model
     attach_function 'output_heating_mix', [], ExcelValue.by_value
     attach_function 'output_imports_proportion', [], ExcelValue.by_value
     attach_function 'output_imports_quantity', [], ExcelValue.by_value
+    attach_function 'output_nonfossil_percentage_generation', [], ExcelValue.by_value
     attach_function 'output_primaryenergysupply', [], ExcelValue.by_value
     attach_function 'output_shannonweinerindex', [], ExcelValue.by_value
     attach_function 'output_version', [], ExcelValue.by_value

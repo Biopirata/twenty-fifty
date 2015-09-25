@@ -14,33 +14,33 @@ window.twentyfifty.views.story = function() {
 
     element = $('#demand_story');
     element.empty();
-    this.stories_for_choices(element, "Hogares en 2050", 32, 33, 37, 38);
-    this.heating_choice_table(element, this.pathway.heating, "Residential");
-    this.stories_for_choices(element, "Transporte personal en 2050", 25, 26, 27, 29);
-    this.stories_for_choices(element, "Comercios en 2050", 43, 47, 48);
-    this.heating_choice_table(element, this.pathway.heating, "Commercial");
-    this.stories_for_choices(element, "Industria en 2050", 40, 41);
-    this.stories_for_choices(element, "Transporte de carga en 2050", 28, 29, 30);
+    this.stories_for_choices(element, "Escenarios socioeconómicos", 66, 67);
+    this.stories_for_choices(element, "Nuestros hogares en 2050", 38, 39, 41, 43, 44);
+    this.stories_for_choices(element, "La forma de transportarnos en 2050", 26, 27, 28, 30, 31);
+    this.stories_for_choices(element, "Los comercios y edificos públicos en 2050", 50, 52);
+    this.stories_for_choices(element, "La industria en 2050", 46, 47, 48);
+    this.stories_for_choices(element, "Transporte de carga en 2050", 33, 34);
 
     element = $('#supply_story');
     element.empty();
-    this.stories_for_choices(element, "Thermal power stations in 2050", 0, 2, 3, 9, 12);
-    this.stories_for_choices(element, "Wind in 2050", 4, 5, 14);
-    this.stories_for_choices(element, "Water: wave, tide and hydro in 2050", 6, 7, 8, 13);
-    this.stories_for_choices(element, "Solar in 2050", 10, 11, 15);
-    this.stories_for_choices(element, "Bioenergy, farming and waste in 2050", 22, 17, 18, 19, 20, 21);
+    this.stories_for_choices(element, "Generación fósil en 2050", 1, 3);
+    this.stories_for_choices(element, "Eólica en 2050", 5);
+    this.stories_for_choices(element, "Nuclear", 0);
+    this.stories_for_choices(element, "Hidro, geotérmica y maremotríz en 2050", 6, 7, 8);
+    this.stories_for_choices(element, "Solar en 2050", 9, 10, 11);
+    this.stories_for_choices(element, "Bioenergía, agricultura y residuos en 2050", 13, 14, 15, 16, 17, 19, 20);
+    this.stories_for_choices(element, "Bosques en 2050", 55, 56);
+
 
     element = $('#ghg_story');
     element.empty();
     this.electricity_generation_capacity_table(element);
-    element.append("<h4>Greenhouse gases</h4>");
+    element.append("<h4>Gases de efecto invernadero</h4>");
     element.append("<p>Las emisiones en 2050 están " + Math.round(this.pathway.ghg_reduction_from_2000*100) + "% por debajo de los niveles del año 2000.</p>");
-    element.append("<p>International aviation and shipping emissions are not included in the UK's 2050 target but are included here to enable emissions from all sectors to be considered.</p>");
-    this.stories_for_choices(element, null, 50);
-    element.append("<h4>Energy security</h4>");
-    this.stories_for_choices(element, null, 51);
-    element.append("<p>If there are five cold, almost windless, winter days, then up to " + (Math.round(this.pathway.balancing[2][this.pathway.balancing[2].length - 1])) + " GW of backup generation capacity will be required to ensure that electricity is always available.</p>");
-    this.stories_for_choices(element, null, 22, 15);
+    element.append("<p>Emisiones internacionales por aviación y carga marítima no se incluyen en la meta 2050 pero se incluyen aquí para permitir que se consideren emisiones de todos lo sectores.</p>");
+    element.append("<h4>Seguridad energética</h4>");
+    this.stories_for_choices(element, null, 59);
+    element.append("<p>Si ha un evento de cinco días en el verano, con poco viento, nubosidad y temperaturas muy altas, entonces de requerirían hasta " + (Math.round(this.pathway.balancing[2][this.pathway.balancing[2].length - 1])) + " GW de capacidad de generación de respaldo para asegurar que haya suficiente electricidad disponible.</p>");
   };
 
   this.stories_for_choices = function(element, title) {
@@ -102,7 +102,7 @@ window.twentyfifty.views.story = function() {
     var data, html, name, value, values, _i, _len, _ref;
     html = [];
     html.push("<table class='heating_choice'>");
-    html.push("<tr><th>GW Capacity</th><th class='target'>2010</th><th class='target'>2050</th></tr>");
+    html.push("<tr><th>Capacidad de generaci&oacute;n</th><th class='target'>2010</th><th class='target'>2050</th></tr>");
 
     capacity = this.pathway.electricity.capacity;
 
