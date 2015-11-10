@@ -1,1 +1,1 @@
-def Model.last_modified_date() @last_modified_date ||= Time.utc(*[20, 4, 1, 25, 9, 2015, 5, 268, true, "CDT"]); end
+def Model.last_modified_date() @last_modified_date ||= Time.utc(*[6, 0, 16, 9, 11, 2015, 1, 313, false, "CST"]); end
