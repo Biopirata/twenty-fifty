@@ -1,5 +1,5 @@
 source 'http://rubygems.org'
-ruby "2.1.7"
+ruby "2.1.8"
 # Framework
 gem 'sinatra'
 # Adición de thin como prueba
