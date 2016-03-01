@@ -24,7 +24,7 @@ window.twentyfifty.views.electricity = function() {
       .title("Emisiones")
       .unit('MtCO2e/año')
       .min_value(-500)
-      .max_value(1000);
+      .max_value(500);
   };
 
 
