@@ -16,18 +16,18 @@ window.twentyfifty.views.primary_energy_chart = function() {
     this.final_energy_chart = timeSeriesStackedAreaChart()
       .title("Demanda Final de Energía")
       .unit('PJ/año')
-      .max_value(18000);
+      .max_value(14000);
 
     this.primary_energy_chart = timeSeriesStackedAreaChart()
       .title("Oferta de Energía Primaria")
       .unit('PJ/año')
-      .max_value(18000);
+      .max_value(14000);
 
     this.emissions_chart = timeSeriesStackedAreaChart()
       .title("Emisiones de Gases de Efecto Invernadero")
       .unit('MtCO2e/año')
-      .min_value(-500)
-      .max_value(1700);
+      .min_value(-300)
+      .max_value(1300);
   };
 
   // This is called when a new view has been selected
@@ -124,7 +124,7 @@ window.twentyfifty.views.primary_energy_chart = function() {
     t = d3.select('#emissions_chart g.drawing').selectAll("g.targetlabel")
       .data([targets[1]]);
 
-    new_label = t.enter().append('g')
+new_label = t.enter().append('g')
       .attr('class', 'targetlabel');
 
     new_label.append('text')
@@ -140,7 +140,7 @@ window.twentyfifty.views.primary_energy_chart = function() {
       .attr('x1', function(d,i) { return x(2020)+4 })
       .attr('y1', function(d,i) { return y(640)-4 })
       .attr('x2', function(d,i) { return x(2030) })
-      .attr('y2', function(d,i) { return y(1500) });
+      .attr('y2', function(d,i) { return y(1200) });
 
 new2_label = t.enter().append('g')
       .attr('class', 'targetlabel');
@@ -150,15 +150,15 @@ new2_label = t.enter().append('g')
 
     t.select('text')
       .attr('x', function(d,i) { return x(2022) })
-      .attr('y', function(d,i) { return y(1520) });
+      .attr('y', function(d,i) { return y(1220) });
 
     new2_label.append('line');
 
     t.select('line')
       .attr('x1', function(d,i) { return x(2049)+4 })
-      .attr('y1', function(d,i) { return y(320)-4 })
+      .attr('y1', function(d,i) { return y(301)-4 })
       .attr('x2', function(d,i) { return x(2030) })
-      .attr('y2', function(d,i) { return y(1500) });
+      .attr('y2', function(d,i) { return y(1200) });
 
   };
 

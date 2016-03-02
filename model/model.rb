@@ -2223,6 +2223,7 @@ class Model
     attach_function 'intermediate_output_c7', [], ExcelValue.by_value
     attach_function 'intermediate_output_d7', [], ExcelValue.by_value
     attach_function 'intermediate_output_f7', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax7', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay7', [], ExcelValue.by_value
     attach_function 'intermediate_output_az7', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba7', [], ExcelValue.by_value
@@ -2235,6 +2236,7 @@ class Model
     attach_function 'intermediate_output_c8', [], ExcelValue.by_value
     attach_function 'intermediate_output_d8', [], ExcelValue.by_value
     attach_function 'intermediate_output_f8', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax8', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay8', [], ExcelValue.by_value
     attach_function 'intermediate_output_az8', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba8', [], ExcelValue.by_value
@@ -2247,6 +2249,7 @@ class Model
     attach_function 'intermediate_output_c9', [], ExcelValue.by_value
     attach_function 'intermediate_output_d9', [], ExcelValue.by_value
     attach_function 'intermediate_output_f9', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax9', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay9', [], ExcelValue.by_value
     attach_function 'intermediate_output_az9', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba9', [], ExcelValue.by_value
@@ -2259,6 +2262,7 @@ class Model
     attach_function 'intermediate_output_c10', [], ExcelValue.by_value
     attach_function 'intermediate_output_d10', [], ExcelValue.by_value
     attach_function 'intermediate_output_f10', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax10', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay10', [], ExcelValue.by_value
     attach_function 'intermediate_output_az10', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba10', [], ExcelValue.by_value
@@ -2271,6 +2275,7 @@ class Model
     attach_function 'intermediate_output_c11', [], ExcelValue.by_value
     attach_function 'intermediate_output_d11', [], ExcelValue.by_value
     attach_function 'intermediate_output_f11', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax11', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay11', [], ExcelValue.by_value
     attach_function 'intermediate_output_az11', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba11', [], ExcelValue.by_value
@@ -2283,6 +2288,7 @@ class Model
     attach_function 'intermediate_output_c12', [], ExcelValue.by_value
     attach_function 'intermediate_output_d12', [], ExcelValue.by_value
     attach_function 'intermediate_output_f12', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax12', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay12', [], ExcelValue.by_value
     attach_function 'intermediate_output_az12', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba12', [], ExcelValue.by_value
@@ -2294,6 +2300,7 @@ class Model
     attach_function 'intermediate_output_bg12', [], ExcelValue.by_value
     attach_function 'intermediate_output_d13', [], ExcelValue.by_value
     attach_function 'intermediate_output_f13', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax13', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay13', [], ExcelValue.by_value
     attach_function 'intermediate_output_az13', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba13', [], ExcelValue.by_value
@@ -2306,6 +2313,7 @@ class Model
     attach_function 'intermediate_output_c14', [], ExcelValue.by_value
     attach_function 'intermediate_output_d14', [], ExcelValue.by_value
     attach_function 'intermediate_output_f14', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax14', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay14', [], ExcelValue.by_value
     attach_function 'intermediate_output_az14', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba14', [], ExcelValue.by_value
@@ -2318,6 +2326,7 @@ class Model
     attach_function 'intermediate_output_c15', [], ExcelValue.by_value
     attach_function 'intermediate_output_d15', [], ExcelValue.by_value
     attach_function 'intermediate_output_f15', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax15', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay15', [], ExcelValue.by_value
     attach_function 'intermediate_output_az15', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba15', [], ExcelValue.by_value
@@ -2330,6 +2339,7 @@ class Model
     attach_function 'intermediate_output_c16', [], ExcelValue.by_value
     attach_function 'intermediate_output_d16', [], ExcelValue.by_value
     attach_function 'intermediate_output_f16', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax16', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay16', [], ExcelValue.by_value
     attach_function 'intermediate_output_az16', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba16', [], ExcelValue.by_value
@@ -2376,6 +2386,7 @@ class Model
     attach_function 'intermediate_output_c23', [], ExcelValue.by_value
     attach_function 'intermediate_output_d23', [], ExcelValue.by_value
     attach_function 'intermediate_output_f23', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax23', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay23', [], ExcelValue.by_value
     attach_function 'intermediate_output_az23', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba23', [], ExcelValue.by_value
@@ -2388,6 +2399,7 @@ class Model
     attach_function 'intermediate_output_c24', [], ExcelValue.by_value
     attach_function 'intermediate_output_d24', [], ExcelValue.by_value
     attach_function 'intermediate_output_f24', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax24', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay24', [], ExcelValue.by_value
     attach_function 'intermediate_output_az24', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba24', [], ExcelValue.by_value
@@ -2400,6 +2412,7 @@ class Model
     attach_function 'intermediate_output_c25', [], ExcelValue.by_value
     attach_function 'intermediate_output_d25', [], ExcelValue.by_value
     attach_function 'intermediate_output_f25', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax25', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay25', [], ExcelValue.by_value
     attach_function 'intermediate_output_az25', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba25', [], ExcelValue.by_value
@@ -2412,6 +2425,7 @@ class Model
     attach_function 'intermediate_output_c26', [], ExcelValue.by_value
     attach_function 'intermediate_output_d26', [], ExcelValue.by_value
     attach_function 'intermediate_output_f26', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax26', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay26', [], ExcelValue.by_value
     attach_function 'intermediate_output_az26', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba26', [], ExcelValue.by_value
@@ -2424,6 +2438,7 @@ class Model
     attach_function 'intermediate_output_c27', [], ExcelValue.by_value
     attach_function 'intermediate_output_d27', [], ExcelValue.by_value
     attach_function 'intermediate_output_f27', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax27', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay27', [], ExcelValue.by_value
     attach_function 'intermediate_output_az27', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba27', [], ExcelValue.by_value
@@ -2436,6 +2451,7 @@ class Model
     attach_function 'intermediate_output_c28', [], ExcelValue.by_value
     attach_function 'intermediate_output_d28', [], ExcelValue.by_value
     attach_function 'intermediate_output_f28', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax28', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay28', [], ExcelValue.by_value
     attach_function 'intermediate_output_az28', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba28', [], ExcelValue.by_value
@@ -2448,6 +2464,7 @@ class Model
     attach_function 'intermediate_output_c29', [], ExcelValue.by_value
     attach_function 'intermediate_output_d29', [], ExcelValue.by_value
     attach_function 'intermediate_output_f29', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax29', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay29', [], ExcelValue.by_value
     attach_function 'intermediate_output_az29', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba29', [], ExcelValue.by_value
@@ -2460,6 +2477,7 @@ class Model
     attach_function 'intermediate_output_c30', [], ExcelValue.by_value
     attach_function 'intermediate_output_d30', [], ExcelValue.by_value
     attach_function 'intermediate_output_f30', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax30', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay30', [], ExcelValue.by_value
     attach_function 'intermediate_output_az30', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba30', [], ExcelValue.by_value
@@ -2471,6 +2489,7 @@ class Model
     attach_function 'intermediate_output_bg30', [], ExcelValue.by_value
     attach_function 'intermediate_output_d31', [], ExcelValue.by_value
     attach_function 'intermediate_output_f31', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax31', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay31', [], ExcelValue.by_value
     attach_function 'intermediate_output_az31', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba31', [], ExcelValue.by_value
@@ -2483,6 +2502,7 @@ class Model
     attach_function 'intermediate_output_c32', [], ExcelValue.by_value
     attach_function 'intermediate_output_d32', [], ExcelValue.by_value
     attach_function 'intermediate_output_f32', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax32', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay32', [], ExcelValue.by_value
     attach_function 'intermediate_output_az32', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba32', [], ExcelValue.by_value
@@ -2495,6 +2515,7 @@ class Model
     attach_function 'intermediate_output_c33', [], ExcelValue.by_value
     attach_function 'intermediate_output_d33', [], ExcelValue.by_value
     attach_function 'intermediate_output_f33', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax33', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay33', [], ExcelValue.by_value
     attach_function 'intermediate_output_az33', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba33', [], ExcelValue.by_value
@@ -2507,6 +2528,7 @@ class Model
     attach_function 'intermediate_output_c34', [], ExcelValue.by_value
     attach_function 'intermediate_output_d34', [], ExcelValue.by_value
     attach_function 'intermediate_output_f34', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax34', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay34', [], ExcelValue.by_value
     attach_function 'intermediate_output_az34', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba34', [], ExcelValue.by_value
@@ -2519,6 +2541,7 @@ class Model
     attach_function 'intermediate_output_c35', [], ExcelValue.by_value
     attach_function 'intermediate_output_d35', [], ExcelValue.by_value
     attach_function 'intermediate_output_f35', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax35', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay35', [], ExcelValue.by_value
     attach_function 'intermediate_output_az35', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba35', [], ExcelValue.by_value
@@ -2530,6 +2553,7 @@ class Model
     attach_function 'intermediate_output_bg35', [], ExcelValue.by_value
     attach_function 'intermediate_output_d36', [], ExcelValue.by_value
     attach_function 'intermediate_output_f36', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax36', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay36', [], ExcelValue.by_value
     attach_function 'intermediate_output_az36', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba36', [], ExcelValue.by_value
@@ -2542,6 +2566,7 @@ class Model
     attach_function 'intermediate_output_c37', [], ExcelValue.by_value
     attach_function 'intermediate_output_d37', [], ExcelValue.by_value
     attach_function 'intermediate_output_f37', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax37', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay37', [], ExcelValue.by_value
     attach_function 'intermediate_output_az37', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba37', [], ExcelValue.by_value
@@ -2554,6 +2579,7 @@ class Model
     attach_function 'intermediate_output_c38', [], ExcelValue.by_value
     attach_function 'intermediate_output_d38', [], ExcelValue.by_value
     attach_function 'intermediate_output_f38', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax38', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay38', [], ExcelValue.by_value
     attach_function 'intermediate_output_az38', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba38', [], ExcelValue.by_value
@@ -2565,6 +2591,7 @@ class Model
     attach_function 'intermediate_output_bg38', [], ExcelValue.by_value
     attach_function 'intermediate_output_d39', [], ExcelValue.by_value
     attach_function 'intermediate_output_f39', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax39', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay39', [], ExcelValue.by_value
     attach_function 'intermediate_output_az39', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba39', [], ExcelValue.by_value
@@ -2577,6 +2604,7 @@ class Model
     attach_function 'intermediate_output_c40', [], ExcelValue.by_value
     attach_function 'intermediate_output_d40', [], ExcelValue.by_value
     attach_function 'intermediate_output_f40', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax40', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay40', [], ExcelValue.by_value
     attach_function 'intermediate_output_az40', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba40', [], ExcelValue.by_value
@@ -2589,6 +2617,7 @@ class Model
     attach_function 'intermediate_output_c41', [], ExcelValue.by_value
     attach_function 'intermediate_output_d41', [], ExcelValue.by_value
     attach_function 'intermediate_output_f41', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax41', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay41', [], ExcelValue.by_value
     attach_function 'intermediate_output_az41', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba41', [], ExcelValue.by_value
@@ -2601,6 +2630,7 @@ class Model
     attach_function 'intermediate_output_c42', [], ExcelValue.by_value
     attach_function 'intermediate_output_d42', [], ExcelValue.by_value
     attach_function 'intermediate_output_f42', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax42', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay42', [], ExcelValue.by_value
     attach_function 'intermediate_output_az42', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba42', [], ExcelValue.by_value
@@ -2612,6 +2642,7 @@ class Model
     attach_function 'intermediate_output_bg42', [], ExcelValue.by_value
     attach_function 'intermediate_output_d43', [], ExcelValue.by_value
     attach_function 'intermediate_output_f43', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax43', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay43', [], ExcelValue.by_value
     attach_function 'intermediate_output_az43', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba43', [], ExcelValue.by_value
@@ -2624,6 +2655,7 @@ class Model
     attach_function 'intermediate_output_c44', [], ExcelValue.by_value
     attach_function 'intermediate_output_d44', [], ExcelValue.by_value
     attach_function 'intermediate_output_f44', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax44', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay44', [], ExcelValue.by_value
     attach_function 'intermediate_output_az44', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba44', [], ExcelValue.by_value
@@ -2636,6 +2668,7 @@ class Model
     attach_function 'intermediate_output_c45', [], ExcelValue.by_value
     attach_function 'intermediate_output_d45', [], ExcelValue.by_value
     attach_function 'intermediate_output_f45', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax45', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay45', [], ExcelValue.by_value
     attach_function 'intermediate_output_az45', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba45', [], ExcelValue.by_value
@@ -2647,6 +2680,7 @@ class Model
     attach_function 'intermediate_output_bg45', [], ExcelValue.by_value
     attach_function 'intermediate_output_d46', [], ExcelValue.by_value
     attach_function 'intermediate_output_f46', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax46', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay46', [], ExcelValue.by_value
     attach_function 'intermediate_output_az46', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba46', [], ExcelValue.by_value
@@ -2658,6 +2692,7 @@ class Model
     attach_function 'intermediate_output_bg46', [], ExcelValue.by_value
     attach_function 'intermediate_output_d47', [], ExcelValue.by_value
     attach_function 'intermediate_output_f47', [], ExcelValue.by_value
+    attach_function 'intermediate_output_ax47', [], ExcelValue.by_value
     attach_function 'intermediate_output_ay47', [], ExcelValue.by_value
     attach_function 'intermediate_output_az47', [], ExcelValue.by_value
     attach_function 'intermediate_output_ba47', [], ExcelValue.by_value
